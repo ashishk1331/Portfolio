@@ -27,7 +27,7 @@ export default function Stuff(props){
 			/>
 				{
 					data.map((i, ind) => (
-						<Card key={ind+''} {...i} logo={<TShirt weight="fill" />}/>
+						<Card key={ind+''} {...i} logo={<TShirt />}/>
 					))
 				}
 

@@ -19,9 +19,9 @@ svg{
 }
 
 .pill{
-	@apply bg-black text-white w-fit p-1 px-2 rounded-full text-xs font-medium tracking-wide
+	@apply bg-black text-white w-fit p-1 px-3 rounded-full text-xs font-medium tracking-wide lowercase
 }
 
 .button-primary{
-	@apply p-3 px-6 h-flex bg-[black] rounded-full overflow-hidden text-[white]
+	@apply p-0 px-6 h-flex bg-black rounded-full overflow-hidden text-white
 }
