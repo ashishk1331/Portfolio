@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+	font-family: 'Work Sans', sans-serif;
+}
+
+.h-flex{
+	@apply flex items-center gap-2
+}
+
+.v-flex{
+	@apply flex flex-col items-center gap-2
+}
+
+svg{
+	@apply w-6 h-6
+}
+
+.pill{
+	@apply bg-black text-white w-fit p-1 px-2 rounded-full text-xs font-medium tracking-wide
+}
+
+.button-primary{
+	@apply p-3 px-6 h-flex bg-[black] rounded-full overflow-hidden text-[white]
+}
