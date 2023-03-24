@@ -20,20 +20,16 @@ export default function Stuff(props){
 	]
 
 	return (
-		<>
+		<div className="mx-auto v-flex bg-green rounded-xl overflow-hidden md:m-8 my-12 mt-0 p-4 py-8 md:p-24 pt-0 md:pt-8">
 			<SectionTitle 
 				logo={<ShoppingBag weight="fill" />}
 				title='Stuff'
 			/>
 				{
 					data.map((i, ind) => (
-						<Card key={ind+''} {...i} logo={<TShirt />}/>
+						<Card key={ind+''} {...i} logo={<TShirt weight="fill" />}/>
 					))
 				}
-
-			{/*<div className="w-full h-flex my-8">
-				<button className="button-primary mx-auto">view all</button>
-			</div>*/}
-		</>
+		</div>
 	)
 }

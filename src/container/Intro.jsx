@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 import { Circle, GithubLogo, RedditLogo, TwitterLogo, SpotifyLogo } from '@phosphor-icons/react'
+=======
+import { SealCheck, Confetti, Circle, GithubLogo, RedditLogo, TwitterLogo, SpotifyLogo } from '@phosphor-icons/react'
+>>>>>>> Stashed changes
 
 import selfie from '../assets/hero_halftone.png'
 import logo from '../assets/logo.png'
@@ -6,7 +10,7 @@ import logo from '../assets/logo.png'
 export default function Intro(props){
 
 	return (
-		<div className="container mx-auto flex flex-col md:flex-row-reverse bg-green">
+		<div className="mx-auto flex flex-col md:flex-row-reverse bg-green rounded-xl overflow-hidden md:m-8 my-12 mt-0">
 
 			<div className="w-full h-screen overflow-hidden">
 				<img src={selfie} alt="" className="h-full w-full object-cover" />
@@ -23,6 +27,10 @@ export default function Intro(props){
 >>>>>>> parent of d56d673 (Init commit -primer)
 					<h1 className="text-8xl tracking-tight">
 						Ashish Khare is mad!
+<<<<<<< Updated upstream
+=======
+						<Confetti weight="fill" className="inline w-16 h-16 mb-4 my-auto" />
+>>>>>>> Stashed changes
 					</h1>
 					<p className="mb-8 text-lg">
 						Hello everyone! I’m Ashish Khare, a indie web developer and designer based in India. Basically, writing this from my table. I envy VDOM creators for thinking a concept like itself. Also, you might find me across these places.
@@ -41,9 +49,16 @@ export default function Intro(props){
 							<marquee>listening to <b>The Hills by Weeknd</b></marquee>
 >>>>>>> parent of d56d673 (Init commit -primer)
 						</a>
+<<<<<<< Updated upstream
 						<a href="https://twitter.com/intent/tweet?screen_name=AshishK1331&ref_src=twsrc%5Etfw" className=" button-primary ml-auto" data-text="Hey!" data-related="" data-show-count="false">
 							<TwitterLogo weight="fill" className="w-16 h-16 aspect-square" />
 							<p className="font-medium">Tweet</p>
+=======
+						<marquee className="w-full">listening to <b>The Hills by Weeknd</b></marquee>
+						<a href="https://twitter.com/intent/tweet?screen_name=AshishK1331&ref_src=twsrc%5Etfw" className="twitter-mention-button button-primary ml-auto" data-text="Hey!" data-related="" data-show-count="false">
+							<TwitterLogo weight="fill" />
+							<p className="font-medium m-auto">Tweet</p>
+>>>>>>> Stashed changes
 						</a>
 						<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 					</div>

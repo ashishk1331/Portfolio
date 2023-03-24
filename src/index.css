@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *{
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Roboto Mono', sans-serif;
 }
 
 .h-flex{
@@ -14,14 +14,22 @@
 	@apply flex flex-col items-center gap-2
 }
 
+button{
+	@apply p-2
+}
+
 svg{
 	@apply w-6 h-6
 }
 
 .pill{
-	@apply bg-black text-white w-fit p-1 px-3 rounded-full text-xs font-medium tracking-wide lowercase
+	@apply bg-green text-black w-fit p-1 px-3 rounded-full text-xs font-bold tracking-wide lowercase
 }
 
 .button-primary{
+<<<<<<< Updated upstream
 	@apply p-0 px-6 h-flex bg-black rounded-full overflow-hidden text-white
+=======
+	@apply p-3 px-6 h-flex bg-black rounded-full text-white shadow-xl
+>>>>>>> Stashed changes
 }
