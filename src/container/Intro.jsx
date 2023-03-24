@@ -1,4 +1,4 @@
-import { SealCheck, Circle, GithubLogo, RedditLogo, TwitterLogo, SpotifyLogo } from '@phosphor-icons/react'
+import { Circle, GithubLogo, RedditLogo, TwitterLogo, SpotifyLogo } from '@phosphor-icons/react'
 
 import selfie from '../assets/hero_halftone.png'
 import logo from '../assets/logo.png'
@@ -14,9 +14,15 @@ export default function Intro(props){
 
 			<div className="v-flex w-full md:h-screen p-4 px-8 md:mx-12 my-8 md:my-0">
 				<div className="m-auto v-flex gap-6">
+<<<<<<< HEAD
+=======
+					<div className="w-full">
+						{/*<img src={logo} alt="Octoicon's mention svg" className="w-12 h-12 ml-2" />*/}
+						<Circle className="w-12 h-12 ml-2 -mb-2" />
+					</div>
+>>>>>>> parent of d56d673 (Init commit -primer)
 					<h1 className="text-8xl tracking-tight">
 						Ashish Khare is mad!
-						<SealCheck className="inline w-16 h-16 ml-4 mb-4 my-auto" />
 					</h1>
 					<p className="mb-8 text-lg">
 						Hello everyone! I’m Ashish Khare, a indie web developer and designer based in India. Basically, writing this from my table. I envy VDOM creators for thinking a concept like itself. Also, you might find me across these places.
@@ -26,12 +32,18 @@ export default function Intro(props){
 						<a href="https://github.com/hugekontrast" className="p-3">
 							<GithubLogo weight="fill" />
 						</a>
+<<<<<<< HEAD
 						<a href="https://open.spotify.com/user/nwo0j3ix1j5mbwl0l3anytu29" className="p-3">
 							<SpotifyLogo weight="fill" className="w-6 h-6" />
+=======
+						<a href="https://open.spotify.com/user/nwo0j3ix1j5mbwl0l3anytu29" className="p-3 flex items-center gap-1 w-full">
+							<SpotifyLogo weight="fill" fill="#1DB954" className="w-8 h-8" />
+							<marquee>listening to <b>The Hills by Weeknd</b></marquee>
+>>>>>>> parent of d56d673 (Init commit -primer)
 						</a>
-						<marquee className="w-full">listening to <b>The Hills by Weeknd</b></marquee>
-						<a href="https://twitter.com/intent/tweet?screen_name=AshishK1331&ref_src=twsrc%5Etfw" className="twitter-mention-button button-primary ml-auto" data-text="Hey!" data-related="" data-show-count="false">
-							<p className="font-medium m-auto">Tweet</p>
+						<a href="https://twitter.com/intent/tweet?screen_name=AshishK1331&ref_src=twsrc%5Etfw" className=" button-primary ml-auto" data-text="Hey!" data-related="" data-show-count="false">
+							<TwitterLogo weight="fill" className="w-16 h-16 aspect-square" />
+							<p className="font-medium">Tweet</p>
 						</a>
 						<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 					</div>
