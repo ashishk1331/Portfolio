@@ -2,8 +2,6 @@ import SectionTitle from '../components/SectionTitle'
 import Card from '../components/Card'
 
 import { Sticker, ShoppingBag , GithubLogo, TShirt } from '@phosphor-icons/react'
-import tshirt from '../assets/shirt-print.jpg'
-import sticker from '../assets/Sticker_Mockup.png'
 
 export default function Stuff(props){
 
@@ -12,7 +10,7 @@ export default function Stuff(props){
 			"title": "Kanpur Wala",
 			"description": "A symbol of being a resident of Kanpur City, situated in Uttar Pradesh, India.",
 			"github-url": "https://github.com/hugekontrast",
-			"banner-url":	tshirt,
+			"banner-url": "https://github.com/hugekontrast/Portfolio/blob/main/images/mockup/shirt-print.jpg?raw=true",
 			"tags": [
 				'tshirt',
 				'kanpur'
@@ -22,7 +20,7 @@ export default function Stuff(props){
 			"title": "San Francisco Sticker",
 			"description": "A symbol of being a resident of Kanpur City, situated in Uttar Pradesh, India.",
 			"github-url": "https://github.com/hugekontrast",
-			"banner-url":	sticker,
+			"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/main/images/mockup/Sticker_Mockup.png",
 			"tags": [
 				'sticker',
 				'san francisco'
@@ -39,7 +37,7 @@ export default function Stuff(props){
 			<ul className="grid md:grid-cols-2 gap-4">
 				{
 					data.map((i, ind) => (
-						<Card key={ind+''} {...i} logo={<TShirt weight="fill" />}/>
+						<Card key={ind+''} {...i} width="full" logo={<TShirt weight="fill" />}/>
 					))
 				}
 			</ul>

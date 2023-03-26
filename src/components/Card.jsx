@@ -2,7 +2,7 @@ import {AdvancedImage} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
 
 import { Circle, GithubLogo, ArrowRight  } from '@phosphor-icons/react'
-
+import { cn } from '../util/cn.js'
 import { motion } from 'framer-motion'
 
 export default function Card(props){
@@ -17,7 +17,7 @@ export default function Card(props){
 		>
 
 			<div className="w-full overflow-hidden rounded-xl shadow-xl">
-				<img src={props['banner-url']} alt="" className="rounded-xl w-16 aspect-square object-cover" />
+				<img src={props['banner-url']} alt="" className={cn("rounded-xl aspect-square object-cover", props.width === 'full' ? "w-full" : "w-16")} />
 			</div>
 
 			<div className="h-flex p-2 my-1 w-full">

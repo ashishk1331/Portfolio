@@ -1,12 +1,10 @@
 import { Circle, GithubLogo, RedditLogo, TwitterLogo, SpotifyLogo, Confetti } from '@phosphor-icons/react'
 
-import selfie from '../assets/hero_halftone.png'
-import logo from '../assets/logo.png'
-
-import circle from '../assets/circle-body.png'
-import text from '../assets/circle-text.png'
-
 export default function Intro(props){
+
+	const selfie = "https://github.com/hugekontrast/Portfolio/blob/main/images/intro/hero_halftone.png?raw=true"
+	const text = "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/intro/circle-text.svg";
+	const circle = "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/intro/circle-body.svg";
 
 	return (
 		<div className="relative mx-auto flex flex-col md:flex-row-reverse bg-green rounded-xl overflow-hidden md:m-8 my-12 mt-0">
