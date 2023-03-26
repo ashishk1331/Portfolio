@@ -13,7 +13,7 @@ export default function Card(props){
         	whileInView={{ opacity: 1, y: 0 }}
 			viewport={{ once: true }}
 			transition={{ duration: 0.6 }}
-			className="p-6 rounded-xl overflow-hidden bg-black text-white v-flex border-2 border-black w-full max-w-[520px] h-full m-auto mt-0 shadow-xl"
+			className="p-6 rounded-xl overflow-hidden bg-black text-white v-flex border-2 border-black w-full max-w-[420px] h-full m-auto mt-0 shadow-xl"
 		>
 
 			<div className="w-full overflow-hidden rounded-xl shadow-xl">
@@ -47,12 +47,12 @@ export default function Card(props){
 				{props.description}
 			</p>
 
-			<a href="#" className="w-fit h-flex mr-auto font-medium">
+			<a href={props['app-url']} target="_blank" className="w-fit h-flex mr-auto font-medium">
 				Visit
 				<ArrowRight size={24} />
 			</a>
 
-			<Circle weight="fill" className="fill-green w-4 h-4 mt-8" />
+			<Circle weight="fill" className="fill-green w-4 h-4 mt-auto" />
 
 		</motion.div>
 	)

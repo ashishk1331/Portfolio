@@ -4,6 +4,7 @@
 		"description": "[Clone] A habit tracking app to enhance your peronality.",
 		"github-url": "https://github.com/hugekontrast/",
 		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/commit_logo.svg",
+		"app-url":"https://commit-neon.vercel.app/",
 		"tags": [
 			"react",
 			"supabase"
@@ -14,6 +15,7 @@
 		"description": "A safe place to store all your important links",
 		"github-url": "https://github.com/hugekontrast/Vault",
 		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/vault_logo.svg",
+		"app-url":"",
 		"tags": [
 			"react",
 			"supabase"
@@ -24,6 +26,7 @@
 		"description": "The no BS daily todo app made with a minimal touch.",
 		"github-url": "https://github.com/hugekontrast/Vault",
 		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/feather_logo.svg",
+		"app-url":"https://feather-roan.vercel.app/",
 		"tags": [
 			"react",
 			"supabase"

@@ -5,7 +5,7 @@ export default function Tweet(props){
 	const reply = true
 
 	return (
-		<div className={cn("bg-black text-white v-flex w-full max-w-[520px] p-8 px-12 rounded-xl overflow-hidden col-start-1 shadow-xl", props.rows === 2 ? "row-span-1 md:row-span-2" : "row-span-1 md:col-start-2" )}>
+		<div className={cn("bg-black text-white v-flex w-full max-w-[420px] p-8 px-12 rounded-xl overflow-hidden col-start-1 shadow-xl", props.rows === 2 ? "row-span-1 md:row-span-2" : "row-span-1 md:col-start-2" )}>
 			<div className="tweet-header text-sm h-flex w-full">
 				<TwitterLogo weight="fill" className="w-8 h-8" />
 				<h1 className="text-gray">
@@ -26,29 +26,9 @@ export default function Tweet(props){
 					</p>
 				</div>
 			}
-			{
-				props.body ? 
-				<p className="w-full min-my-4 my-auto text-2xl">
-					{props.body}
-				</p>
-				:
-				<p className="w-full min-my-4 my-auto text-2xl">
-					1. Minimal wages
-					<br/>
-					2. Frequent burn outs
-					<br/>
-					3. Self doubts
-					<br/>
-					4. Maximum screen times
-					<br/>
-					5. Cut throat competition 
-					<br/>
-
-					And 
-					<br/>
-					6. Freaking close dead line punches.
-				</p>
-			}
+			<p className="w-full min-my-4 my-auto text-lg md:text-2xl">
+				{props.body}
+			</p>
 			<Circle weight="fill" className="fill-green w-4 h-4 mt-8" />
 		</div>
 	)

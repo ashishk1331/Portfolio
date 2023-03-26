@@ -4,6 +4,7 @@
 		"description": "Create leaderboard from blends in the Spotify and compete with your friends.",
 		"github-url": "https://github.com/hugekontrast/Spot-Ladder",
 		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/spot%20ladder_logo.svg",
+		"app-url":"",
 		"tags": [
 			"react",
 			"spotify api"
@@ -14,6 +15,7 @@
 		"description": "Convert your boring links to lively stories for the readers to read!",
 		"github-url": "https://github.com/hugekontrast",
 		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/the%20url%20tool_logo.svg",
+		"app-url":"",
 		"tags": [
 			"react"
 		]
@@ -23,6 +25,7 @@
 		"description": "A service to download pinterest posts",
 		"github-url": "https://github.com/hugekontrast/PinLoader",
 		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/pin%20loader_logo.svg",
+		"app-url":"",
 		"tags": [
 			"react",
 			"flask"
@@ -33,6 +36,7 @@
 		"description": "Rain-check before you leave for work. Know weather around you.",
 		"github-url": "https://github.com/hugekontrast/Weather-App",
 		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/weather_logo.svg",
+		"app-url":"https://roasted-mud-popcorn.glitch.me/",
 		"tags": [
 			"react",
 			"api",
@@ -44,6 +48,7 @@
 		"description": "A hand-picked collection of UI design to upskill your Ui game.",
 		"github-url": "https://github.com/hugekontrast/ProjectCheckList",
 		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/checklist_logo.svg",
+		"app-url":"https://project-check-list.vercel.app/",
 		"tags": [
 			"react"
 		]
@@ -53,6 +58,7 @@
 		"description": "A font pairing game that can help you discover and pair weird fonts together.",
 		"github-url": "https://github.com/hugekontrast/Saturn",
 		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/saturn_logo.svg",
+		"app-url":"https://saturn-sand.vercel.app/",
 		"tags": [
 			"react"
 		]
@@ -62,6 +68,7 @@
 		"description": "A photography utility that helps you take those vibrant hueful low light shots.",
 		"github-url": "https://github.com/hugekontrast/Flare",
 		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/flare_logo.svg",
+		"app-url":"https://hugekontrast.github.io/Flare",
 		"tags": [
 			"react"
 		]
@@ -71,6 +78,7 @@
 		"description": "A random word generator to spark inspiration in the minds of reader.",
 		"github-url": "https://github.com/hugekontrast/spark",
 		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/Spark_logo.svg",
+		"app-url":"https://hugekontrast.github.io/spark/",
 		"tags": [
 			"react"
 		]
