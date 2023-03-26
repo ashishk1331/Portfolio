@@ -3,10 +3,18 @@ import { Circle, GithubLogo, RedditLogo, TwitterLogo, SpotifyLogo, Confetti } fr
 import selfie from '../assets/hero_halftone.png'
 import logo from '../assets/logo.png'
 
+import circle from '../assets/circle-body.png'
+import text from '../assets/circle-text.png'
+
 export default function Intro(props){
 
 	return (
-		<div className="mx-auto flex flex-col md:flex-row-reverse bg-green rounded-xl overflow-hidden md:m-8 my-12 mt-0">
+		<div className="relative mx-auto flex flex-col md:flex-row-reverse bg-green rounded-xl overflow-hidden md:m-8 my-12 mt-0">
+
+			<div className="absolute top-1/2 md:top-8 -translate-x-1/2 md:translate-x-0 left-1/2 -translate-y-full md:translate-y-0 w-36 aspect-square overflow-hidden ">
+				<img src={text} alt="" className="absolute top-0 left-0 w-full object-cover animate-spin" style={{ animationDuration: '4s' }} />
+				<img src={circle} alt="" className="w-full object-cover" />
+			</div>
 
 			<div className="w-full h-screen overflow-hidden">
 				<img src={selfie} alt="" className="h-full w-full object-cover" />

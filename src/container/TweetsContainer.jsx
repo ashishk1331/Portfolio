@@ -11,9 +11,11 @@ export default function TweetsContainer(props){
 				title='Tweets'
 			/>
 			<ul className="grid md:grid-rows-2 grid-cols-1 md:grid-cols-2 grid-flow-col gap-4">
-				<Tweet rows={2} />
-				<Tweet body="in not trying to become a rapper, I’m not getting married, & I’m not pregnant." />
-				<Tweet body="in not trying to become a rapper, I’m not getting married, & I’m not pregnant." />
+				<Tweet rows={2} body="Ah! let's say after whole 2 months of procrastination I've decided to crack the advent of Vue. However, here lies the twist I'll do it in React. Why? Did you ask yourself the same before learning React? Neither did I." />
+				<Tweet body="I'd just created a service to update my banner, and they rolled out an update that will be shutting down my service now. 💀" />
+				<Tweet body="Creating splash screen animations with 
+@framer
+ is way way like WAYYYYYY easy." />
 			</ul>
 		</div>
 	)

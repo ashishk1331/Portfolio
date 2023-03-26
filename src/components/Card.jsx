@@ -1,5 +1,7 @@
 import banner from '../assets/banner_spot_ladder.png'
 import logo from '../assets/logo_spot_ladder.svg'
+import {AdvancedImage} from '@cloudinary/react';
+import {Cloudinary} from "@cloudinary/url-gen";
 
 import { Circle, GithubLogo, ArrowRight  } from '@phosphor-icons/react'
 
@@ -16,8 +18,8 @@ export default function Card(props){
 			className="p-6 rounded-xl overflow-hidden bg-black text-white v-flex border-2 border-black w-full max-w-[520px] h-full m-auto mt-0 shadow-xl"
 		>
 
-			<div className="rounded-xl shadow-xl">
-				<img src={props['banner-url']} alt="" className="rounded-xl w-full aspect-square object-cover" />
+			<div className="w-full overflow-hidden rounded-xl shadow-xl">
+				<img src={props['banner-url']} alt="" className="rounded-xl w-16 aspect-square object-cover" />
 			</div>
 
 			<div className="h-flex p-2 my-1 w-full">

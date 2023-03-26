@@ -3,7 +3,7 @@
 		"title": "Spot Ladder",
 		"description": "Create leaderboard from blends in the Spotify and compete with your friends.",
 		"github-url": "https://github.com/hugekontrast/Spot-Ladder",
-		"banner-url":"https://hxxdexxenwcbgsvfwfpm.supabase.co/storage/v1/object/public/banners/banner_spot_ladder.png?t=2023-02-21T11%3A48%3A13.964Z",
+		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/d6502fe7714d162cde0ebe6728b5bff4bb838f02/src/assets/logo_spot_ladder.svg",
 		"tags": [
 			"react",
 			"spotify api"
@@ -13,7 +13,7 @@
 		"title": "The URL tool",
 		"description": "Convert your boring links to lively stories for the readers to read!",
 		"github-url": "https://github.com/hugekontrast",
-		"banner-url":"https://hxxdexxenwcbgsvfwfpm.supabase.co/storage/v1/object/public/banners/banner_the_url_tool.png?t=2023-02-21T11%3A48%3A30.390Z",
+		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/d6502fe7714d162cde0ebe6728b5bff4bb838f02/src/assets/logo_the_url_tool.svg",
 		"tags": [
 			"react"
 		]
@@ -22,7 +22,7 @@
 		"title": "Pinloader",
 		"description": "A service to download pinterest posts",
 		"github-url": "https://github.com/hugekontrast/PinLoader",
-		"banner-url":"https://hxxdexxenwcbgsvfwfpm.supabase.co/storage/v1/object/public/banners/banner_pinloader.png?t=2023-02-21T11%3A47%3A53.658Z",
+		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/d6502fe7714d162cde0ebe6728b5bff4bb838f02/src/assets/logo_pinloader.svg",
 		"tags": [
 			"react",
 			"flask"
@@ -32,7 +32,7 @@
 		"title": "Weather App",
 		"description": "Rain-check before you leave for work. Know weather around you.",
 		"github-url": "https://github.com/hugekontrast/Weather-App",
-		"banner-url": "https://hxxdexxenwcbgsvfwfpm.supabase.co/storage/v1/object/public/banners/banner_weather.png?t=2023-02-21T11%3A49%3A03.558Z",
+		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/d6502fe7714d162cde0ebe6728b5bff4bb838f02/src/assets/logo_weather.svg",
 		"tags": [
 			"react",
 			"api",
