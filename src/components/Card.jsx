@@ -1,5 +1,3 @@
-import banner from '../assets/banner_spot_ladder.png'
-import logo from '../assets/logo_spot_ladder.svg'
 import {AdvancedImage} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
 

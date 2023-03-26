@@ -3,7 +3,7 @@
 		"title": "Spot Ladder",
 		"description": "Create leaderboard from blends in the Spotify and compete with your friends.",
 		"github-url": "https://github.com/hugekontrast/Spot-Ladder",
-		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/d6502fe7714d162cde0ebe6728b5bff4bb838f02/src/assets/logo_spot_ladder.svg",
+		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/92ad3fb8c7c6546542599cab80c44a0ef575de4b/src/assets/spot%20ladder_logo.svg",
 		"tags": [
 			"react",
 			"spotify api"
@@ -13,7 +13,7 @@
 		"title": "The URL tool",
 		"description": "Convert your boring links to lively stories for the readers to read!",
 		"github-url": "https://github.com/hugekontrast",
-		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/d6502fe7714d162cde0ebe6728b5bff4bb838f02/src/assets/logo_the_url_tool.svg",
+		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/92ad3fb8c7c6546542599cab80c44a0ef575de4b/src/assets/the%20url%20tool_logo.svg",
 		"tags": [
 			"react"
 		]
@@ -22,7 +22,7 @@
 		"title": "Pinloader",
 		"description": "A service to download pinterest posts",
 		"github-url": "https://github.com/hugekontrast/PinLoader",
-		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/d6502fe7714d162cde0ebe6728b5bff4bb838f02/src/assets/logo_pinloader.svg",
+		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/92ad3fb8c7c6546542599cab80c44a0ef575de4b/src/assets/pin%20loader_logo.svg",
 		"tags": [
 			"react",
 			"flask"
@@ -32,11 +32,29 @@
 		"title": "Weather App",
 		"description": "Rain-check before you leave for work. Know weather around you.",
 		"github-url": "https://github.com/hugekontrast/Weather-App",
-		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/d6502fe7714d162cde0ebe6728b5bff4bb838f02/src/assets/logo_weather.svg",
+		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/92ad3fb8c7c6546542599cab80c44a0ef575de4b/src/assets/weather_logo.svg",
 		"tags": [
 			"react",
 			"api",
 			"chart js"
+		]
+	},
+	{
+		"title": "Project Checklist",
+		"description": "A hand-picked collection of UI design to upskill your Ui game.",
+		"github-url": "https://github.com/hugekontrast/Weather-App",
+		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/92ad3fb8c7c6546542599cab80c44a0ef575de4b/src/assets/checklist_logo.svg",
+		"tags": [
+			"react"
+		]
+	},
+	{
+		"title": "Saturn",
+		"description": "A font pairing game that can help you discover and pair weird fonts together.",
+		"github-url": "https://github.com/hugekontrast/Weather-App",
+		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/92ad3fb8c7c6546542599cab80c44a0ef575de4b/src/assets/saturn_logo.svg",
+		"tags": [
+			"react"
 		]
 	}
 ]

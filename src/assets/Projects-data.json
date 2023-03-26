@@ -3,7 +3,7 @@
 		"title": "Commit",
 		"description": "[Clone] A habit tracking app to enhance your peronality.",
 		"github-url": "https://github.com/hugekontrast/",
-		"banner-url":"https://hxxdexxenwcbgsvfwfpm.supabase.co/storage/v1/object/public/banners/banner_commit.png?t=2023-02-21T11%3A47%3A21.405Z",
+		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/92ad3fb8c7c6546542599cab80c44a0ef575de4b/src/assets/commit_logo.svg",
 		"tags": [
 			"react",
 			"supabase"
@@ -13,7 +13,17 @@
 		"title": "Vault",
 		"description": "A safe place to store all your important links",
 		"github-url": "https://github.com/hugekontrast/Vault",
-		"banner-url":"https://hxxdexxenwcbgsvfwfpm.supabase.co/storage/v1/object/public/banners/banner_vault.png?t=2023-02-21T11%3A48%3A44.761Z",
+		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/92ad3fb8c7c6546542599cab80c44a0ef575de4b/src/assets/vault_logo.svg",
+		"tags": [
+			"react",
+			"supabase"
+		]
+	},
+	{
+		"title": "Feather",
+		"description": "The no BS daily todo app made with a minimal touch.",
+		"github-url": "https://github.com/hugekontrast/Vault",
+		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/92ad3fb8c7c6546542599cab80c44a0ef575de4b/src/assets/feather_logo.svg",
 		"tags": [
 			"react",
 			"supabase"
