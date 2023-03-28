@@ -13,7 +13,7 @@ export default function Card(props){
         	whileInView={{ opacity: 1, y: 0 }}
 			viewport={{ once: true }}
 			transition={{ duration: 0.6 }}
-			className="p-6 rounded-xl overflow-hidden bg-black text-white v-flex border-2 border-black w-full max-w-[420px] h-full m-auto mt-0 shadow-xl"
+			className={cn("p-6 rounded-xl overflow-hidden bg-black text-white v-flex border-2 border-black w-full max-w-[420px] h-full m-auto mt-0 shadow-xl", props.last ? "col-span-2" : "")}
 		>
 
 			<div className="w-full overflow-hidden rounded-xl shadow-xl">

@@ -16,7 +16,7 @@ export default function Projects(props){
 
 			{
 				data.map((i, ind) => (
-					<Card key={ind+''} {...i} />
+					<Card key={ind+''} last={data.length - 1 === ind && data.length%2} {...i} />
 				))
 			}
 		</ul>

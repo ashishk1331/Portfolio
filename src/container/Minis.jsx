@@ -15,7 +15,7 @@ export default function Minis(porps){
 		<ul className="grid md:grid-cols-2 gap-4">
 			{
 				data.map((i, ind) => (
-					<Card key={ind+''} {...i} />
+					<Card key={ind+''} last={data.length - 1 === ind && data.length%2} {...i} />
 				))
 			}
 		</ul>

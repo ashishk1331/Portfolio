@@ -37,7 +37,7 @@ export default function Stuff(props){
 			<ul className="grid md:grid-cols-2 gap-4">
 				{
 					data.map((i, ind) => (
-						<Card key={ind+''} {...i} width="full" logo={<TShirt weight="fill" />}/>
+						<Card key={ind+''} {...i} last={data.length - 1 === ind && data.length%2} width="full" logo={<TShirt weight="fill" />}/>
 					))
 				}
 			</ul>

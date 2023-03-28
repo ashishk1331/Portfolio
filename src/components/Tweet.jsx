@@ -1,11 +1,19 @@
 import { TwitterLogo, ArrowSquareOut, ArrowBendDownRight, Circle } from '@phosphor-icons/react'
 import { cn } from '../util/cn'
+import { motion } from 'framer-motion'
+
 export default function Tweet(props){
 
 	const reply = true
 
 	return (
-		<div className={cn("bg-black text-white v-flex w-full max-w-[420px] p-8 px-12 rounded-xl overflow-hidden col-start-1 shadow-xl", props.rows === 2 ? "row-span-1 md:row-span-2" : "row-span-1 md:col-start-2" )}>
+		<motion.div
+			initial={{ opacity: 0, y: "25%" }}
+        	whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true }}
+			transition={{ duration: 0.6 }}
+			className={cn("bg-black text-white v-flex w-full max-w-[420px] p-8 px-12 rounded-xl overflow-hidden col-start-1 shadow-xl", props.rows === 2 ? "row-span-1 md:row-span-2" : "row-span-1 md:col-start-2" )}
+			>
 			<div className="tweet-header text-sm h-flex w-full">
 				<TwitterLogo weight="fill" className="w-8 h-8" />
 				<h1 className="text-gray">
@@ -30,6 +38,6 @@ export default function Tweet(props){
 				{props.body}
 			</p>
 			<Circle weight="fill" className="fill-green w-4 h-4 mt-8" />
-		</div>
+		</motion.div>
 	)
 }
