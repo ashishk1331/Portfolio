@@ -34,7 +34,7 @@ export default function Tweet(props){
 					</p>
 				</div>
 			}
-			<p className="w-full min-my-4 my-auto text-lg md:text-2xl">
+			<p className="w-full min-my-4 my-auto md:text-xl">
 				{props.body}
 			</p>
 			<Circle weight="fill" className="fill-green w-4 h-4 mt-8" />

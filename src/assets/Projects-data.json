@@ -1,27 +1,5 @@
 [
 	{
-		"title": "Commit",
-		"description": "[Clone] A habit tracking app to enhance your peronality.",
-		"github-url": "https://github.com/hugekontrast/",
-		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/commit_logo.svg",
-		"app-url":"https://commit-neon.vercel.app/",
-		"tags": [
-			"react",
-			"supabase"
-		]
-	},
-	{
-		"title": "Vault",
-		"description": "A safe place to store all your important links",
-		"github-url": "https://github.com/hugekontrast/Vault",
-		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/vault_logo.svg",
-		"app-url":"",
-		"tags": [
-			"react",
-			"supabase"
-		]
-	},
-	{
 		"title": "Feather",
 		"description": "The no BS daily todo app made with a minimal touch.",
 		"github-url": "https://github.com/hugekontrast/Vault",
@@ -30,6 +8,16 @@
 		"tags": [
 			"react",
 			"supabase"
+		]
+	},
+	{
+		"title": "Pro Checklist",
+		"description": "A hand-picked collection of exercises to upskill your React game.",
+		"github-url": "https://github.com/hugekontrast/ProjectCheckList",
+		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/checklist_logo.svg",
+		"app-url":"https://project-check-list.vercel.app/",
+		"tags": [
+			"react"
 		]
 	}
 ]

@@ -1,26 +1,5 @@
 [
 	{
-		"title": "Spot Ladder",
-		"description": "Create leaderboard from blends in the Spotify and compete with your friends.",
-		"github-url": "https://github.com/hugekontrast/Spot-Ladder",
-		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/spot%20ladder_logo.svg",
-		"app-url":"",
-		"tags": [
-			"react",
-			"spotify api"
-		]
-	},
-	{
-		"title": "The URL tool",
-		"description": "Convert your boring links to lively stories for the readers to read!",
-		"github-url": "https://github.com/hugekontrast",
-		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/the%20url%20tool_logo.svg",
-		"app-url":"",
-		"tags": [
-			"react"
-		]
-	},
-	{
 		"title": "Pinloader",
 		"description": "A service to download pinterest posts",
 		"github-url": "https://github.com/hugekontrast/PinLoader",

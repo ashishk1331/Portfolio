@@ -10,7 +10,7 @@ export default function Projects(props){
 	<div className="mx-auto v-flex bg-green rounded-xl overflow-hidden md:m-8 my-12 mt-0 p-4 py-8 md:p-24 pt-0 md:pt-8">
 		<SectionTitle 
 			logo={<Package weight="fill" />}
-			title='Prokects'
+			title='Projects'
 		/>
 		<ul className="grid md:grid-cols-2 gap-4">
 

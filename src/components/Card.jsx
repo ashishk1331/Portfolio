@@ -47,12 +47,12 @@ export default function Card(props){
 				{props.description}
 			</p>
 
-			<a href={props['app-url']} target="_blank" className="w-fit h-flex mr-auto font-medium">
+			<a href={props['app-url']} target="_blank" className="w-fit h-flex mr-auto font-medium mt-auto">
 				Visit
 				<ArrowRight size={24} />
 			</a>
 
-			<Circle weight="fill" className="fill-green w-4 h-4 mt-auto" />
+			<Circle weight="fill" className="fill-green w-4 h-4" />
 
 		</motion.div>
 	)
