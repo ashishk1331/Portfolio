@@ -3,11 +3,12 @@
 		"title": "Pinloader",
 		"description": "A service to download pinterest posts",
 		"github-url": "https://github.com/hugekontrast/PinLoader",
-		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/pin%20loader_logo.svg",
-		"app-url":"",
+		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/0600ce9068a8851726be89c5baff7a036ab169a5/images/logos/pin%20loader_logo.svg",
+		"app-url":"https://pin-loader.vercel.app/",
 		"tags": [
 			"react",
-			"flask"
+			"flask",
+			"cheerio"
 		]
 	},
 	{
@@ -39,14 +40,15 @@
 		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/saturn_logo.svg",
 		"app-url":"https://saturn-sand.vercel.app/",
 		"tags": [
-			"react"
+			"react",
+			"fontsource"
 		]
 	},
 	{
 		"title": "Flare",
 		"description": "A photography utility that helps you take those vibrant hueful low light shots.",
 		"github-url": "https://github.com/hugekontrast/Flare",
-		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/flare_logo.svg",
+		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/0600ce9068a8851726be89c5baff7a036ab169a5/images/logos/flare_logo.svg",
 		"app-url":"https://hugekontrast.github.io/Flare",
 		"tags": [
 			"react"

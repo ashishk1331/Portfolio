@@ -4,8 +4,6 @@ import { motion } from 'framer-motion'
 
 export default function Tweet(props){
 
-	const reply = true
-
 	return (
 		<motion.div
 			initial={{ opacity: 0, y: "25%" }}
@@ -18,14 +16,15 @@ export default function Tweet(props){
 				<TwitterLogo weight="fill" className="w-8 h-8" />
 				<h1 className="text-gray">
 					<p>@AshishK1331</p>
-					<p>12 May</p>
+					<p>{props.date}</p>
 				</h1>
-				<button className="ml-auto">
+				<a href={props.tweetLink} className="ml-auto">
 					<ArrowSquareOut/>
-				</button>
+				</a>
 			</div>
 			{
-				reply && <div className="h-flex w-full">
+				/*
+				props.isReply && <div className="h-flex w-full">
 					<ArrowBendDownRight size={32} />
 					<p className="text-sm text-gray">
 						Reply to 
@@ -33,6 +32,7 @@ export default function Tweet(props){
 						<a href="#" className="underline">@ShowwcaseHQ</a>
 					</p>
 				</div>
+				*/
 			}
 			<p className="w-full min-my-4 my-auto md:text-xl">
 				{props.body}

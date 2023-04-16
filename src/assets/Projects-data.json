@@ -7,17 +7,20 @@
 		"app-url":"https://feather-roan.vercel.app/",
 		"tags": [
 			"react",
-			"supabase"
+			"supabase",
+			"tailwindcss"
 		]
 	},
 	{
 		"title": "Pro Checklist",
 		"description": "A hand-picked collection of exercises to upskill your React game.",
-		"github-url": "https://github.com/hugekontrast/ProjectCheckList",
-		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/checklist_logo.svg",
-		"app-url":"https://project-check-list.vercel.app/",
+		"github-url": "https://github.com/hugekontrast/ProjectCheckList/tree/main/next-app",
+		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/0600ce9068a8851726be89c5baff7a036ab169a5/images/logos/pro%20checklist_logo.svg",
+		"app-url":"https://pro-checklist.vercel.app/",
 		"tags": [
-			"react"
+			"nextjs",
+			"supabase",
+			"tailwindcss"
 		]
 	}
 ]

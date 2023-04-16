@@ -1,6 +1,5 @@
 import SectionTitle from "../components/SectionTitle";
 import Card from "../components/Card";
-import StickerPhoto from "../assets/sticker-square-sf.png";
 
 import { ShoppingBag, TShirt, Sticker } from "@phosphor-icons/react";
 
@@ -25,7 +24,7 @@ export default function Stuff(props) {
 				"https://www.redbubble.com/i/sticker/San-Francisco-sticker-by-hugekontrast/144280192.EJUG5",
 			"app-url":
 				"https://www.redbubble.com/i/sticker/San-Francisco-sticker-by-hugekontrast/144280192.EJUG5",
-			"banner-url": StickerPhoto,
+			"banner-url": 'https://raw.githubusercontent.com/hugekontrast/Portfolio/main/images/mockup/sticker-square-sf.png',
 			tags: ["sticker", "san francisco"],
 		},
 	];
