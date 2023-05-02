@@ -2,25 +2,23 @@
 	{
 		"title": "Feather",
 		"description": "The no BS daily todo app made with a minimal touch.",
-		"github-url": "https://github.com/hugekontrast/Vault",
-		"banner-url":"https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/feather_logo.svg",
+		"github-url": "https://github.com/ashishk1331/Feather",
+		"banner-url":"https://raw.githubusercontent.com/ashishk1331/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/feather_logo.svg",
 		"app-url":"https://feather-roan.vercel.app/",
 		"tags": [
 			"react",
-			"supabase",
 			"tailwindcss"
 		]
 	},
 	{
-		"title": "Pro Checklist",
-		"description": "A hand-picked collection of exercises to upskill your React game.",
-		"github-url": "https://github.com/hugekontrast/ProjectCheckList/tree/main/next-app",
-		"banner-url": "https://raw.githubusercontent.com/hugekontrast/Portfolio/0600ce9068a8851726be89c5baff7a036ab169a5/images/logos/pro%20checklist_logo.svg",
-		"app-url":"https://pro-checklist.vercel.app/",
+		"title": "Hot Score",
+		"description": "Increase your follower count by setting goals at Twitter.",
+		"github-url": "https://github.com/ashishk1331/Hot-Score",
+		"banner-url":"https://raw.githubusercontent.com/ashishk1331/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/logos/feather_logo.svg",
+		"app-url":"https://hot-score.vercel.app/",
 		"tags": [
 			"nextjs",
-			"supabase",
-			"tailwindcss"
+			"twitter api"
 		]
 	}
 ]

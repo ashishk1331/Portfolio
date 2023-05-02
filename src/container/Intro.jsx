@@ -25,7 +25,7 @@ export default function Intro(props){
 						<Confetti weight="fill" className="inline w-16 h-16 mb-4 my-auto" />
 					</h1>
 					<p className="mb-8 text-lg">
-						Hello everyone! I’m Ashish Khare, a indie web developer and designer based in India. Basically, writing this from my table. I envy VDOM creators for thinking a concept like itself. Also, you might find me across these places.
+						Hello everyone! I’m Ashish Khare, a indie web developer and designer based in India. I envy VDOM creators for thinking a concept like itself. Also, I've been learning about design systems these days.
 					</p>
 
 					<div className="h-flex w-full">
