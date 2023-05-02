@@ -2,9 +2,9 @@ import { Circle, GithubLogo, RedditLogo, TwitterLogo, SpotifyLogo, Confetti } fr
 
 export default function Intro(props){
 
-	const selfie = "https://github.com/hugekontrast/Portfolio/blob/main/images/intro/hero_halftone.png?raw=true"
-	const text = "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/intro/circle-text.svg";
-	const circle = "https://raw.githubusercontent.com/hugekontrast/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/intro/circle-body.svg";
+	const selfie = "https://github.com/ashishk1331/Portfolio/blob/main/images/intro/hero_halftone.png?raw=true"
+	const text = "https://raw.githubusercontent.com/ashishk1331/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/intro/circle-text.svg";
+	const circle = "https://raw.githubusercontent.com/ashishk1331/Portfolio/69a8081678cd3bdd93b9c0f8f9dbacfd6fdbb897/images/intro/circle-body.svg";
 
 	return (
 		<div className="relative mx-auto flex flex-col md:flex-row-reverse bg-green rounded-xl overflow-hidden md:m-8 my-12 mt-0">
@@ -29,7 +29,7 @@ export default function Intro(props){
 					</p>
 
 					<div className="h-flex w-full">
-						<a href="https://github.com/hugekontrast" className="p-3">
+						<a href="https://github.com/ashishk1331" className="p-3">
 							<GithubLogo weight="fill" />
 						</a>
 						<a href="https://open.spotify.com/user/nwo0j3ix1j5mbwl0l3anytu29" className="p-3 flex items-center gap-1 w-full">
