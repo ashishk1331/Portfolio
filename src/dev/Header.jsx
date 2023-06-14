@@ -6,7 +6,7 @@ import {
 	SpotifyLogo,
 	CaretDown,
 	CaretUp,
-	HandWaving,
+	ArrowSquareOut,
 } from "@phosphor-icons/react";
 import image2xl from "../../images/hero/2xl-1536px.png";
 import imagexl from "../../images/hero/xl-1280px.png";
@@ -26,8 +26,12 @@ export default function (props) {
 				<Circle weight="fill" className="fill-fore animate-pulse" />
 				<h1 className="mr-auto">Home</h1>
 				<div className="hidden md:flex items-center gap-4">
-					<h1 className="mx-4">Resources</h1>
-					<h1>Projects</h1>
+					<a href="#projects">
+						<h1>Projects</h1>
+					</a>
+					<a href="#resources" className="mx-4">
+						<h1>Resources</h1>
+					</a>
 				</div>
 
 				<button
@@ -45,10 +49,16 @@ export default function (props) {
 								duration: 0.3,
 							}}
 							exit={{ opacity: 0, scale: 0.9, y: -20 }}
-							className="absolute top-full translate-y-full md:hidden bg-white border-2 border-fore v-flex p-4 rounded-md w-full"
+							className="absolute top-full translate-y-full md:hidden bg-white border-2 border-fore flex flex-col items-center gap-6 p-8 rounded-md w-full"
 						>
-							<h1>Resources</h1>
-							<h1>Projects</h1>
+							<a href="#projects" className="h-flex">
+								<h1>Projects</h1>
+								<ArrowSquareOut />
+							</a>
+							<a href="#resources" className="mx-4 h-flex">
+								<h1>Resources</h1>
+								<ArrowSquareOut />
+							</a>
 						</motion.div>
 					</AnimatePresence>
 				)}
@@ -71,8 +81,6 @@ export default function (props) {
 			{/*  Icon Tray  */}
 			<IconTray />
 
-			{/*  Introduction Section  */}
-			<Intro />
 		</>
 	);
 }
@@ -104,31 +112,5 @@ function IconTray(props) {
 				<SpotifyLogo />
 			</a>
 		</div>
-	);
-}
-
-function Intro(props) {
-	return (
-		<main className="p-2">
-			<h1 className="text-4xl">
-				<p className="inline text-fore">AshishK</p> is back
-			</h1>
-
-			<p>
-				:waving-hand:  Hello everyone! I’m Ashish Khare, a indie web developer and
-				designer based in India. I usually love studying topics realted
-				to data structures like the almighty virtual DOM.
-			</p>
-			<p>
-				I'm that night owl who tweets as well. Personally, I enjoy
-				Twitter not only becasue of the great people that reside there
-				but also becasue it has a great User Experience, features
-				unparallel to any other social site and ofcourse the
-				"controvery". :wink:
-			</p>
-			<p>
-				And yes! I deliberately left out the dark mode. :evil-laugh:
-			</p>
-		</main>
 	);
 }
