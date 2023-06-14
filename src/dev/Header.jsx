@@ -25,43 +25,8 @@ export default function (props) {
 			<header className="relative h-flex py-4">
 				<Circle weight="fill" className="fill-fore animate-pulse" />
 				<h1 className="mr-auto">Home</h1>
-				<div className="hidden md:flex items-center gap-4">
-					<a href="#projects">
-						<h1>Projects</h1>
-					</a>
-					<a href="#resources" className="mx-4">
-						<h1>Resources</h1>
-					</a>
-				</div>
-
-				<button
-					className="md:hidden"
-					onClick={(e) => setOpenMenu((prev) => !prev)}
-				>
-					{openMenu ? <CaretUp /> : <CaretDown />}
-				</button>
-				{openMenu && (
-					<AnimatePresence>
-						<motion.div
-							initial={{ opacity: 0.8, scale: 0.9, y: -20 }}
-							animate={{ opacity: 1, scale: 1, y: 0 }}
-							transition={{
-								duration: 0.3,
-							}}
-							exit={{ opacity: 0, scale: 0.9, y: -20 }}
-							className="absolute top-full translate-y-full md:hidden bg-white border-2 border-fore flex flex-col items-center gap-6 p-8 rounded-md w-full"
-						>
-							<a href="#projects" className="h-flex">
-								<h1>Projects</h1>
-								<ArrowSquareOut />
-							</a>
-							<a href="#resources" className="mx-4 h-flex">
-								<h1>Resources</h1>
-								<ArrowSquareOut />
-							</a>
-						</motion.div>
-					</AnimatePresence>
-				)}
+				{/*<h1 className="mx-4">Blog</h1>
+				<h1>Cases</h1>*/}
 			</header>
 
 			{/*  Hero Image placement  */}
