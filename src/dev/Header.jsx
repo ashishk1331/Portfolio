@@ -7,6 +7,7 @@ import {
 	CaretDown,
 	CaretUp,
 	ArrowSquareOut,
+	LinkedinLogo,
 } from "@phosphor-icons/react";
 import image2xl from "../../images/hero/2xl-1536px.png";
 import imagexl from "../../images/hero/xl-1280px.png";
@@ -22,7 +23,7 @@ export default function (props) {
 	return (
 		<>
 			{/*  Navigation header  */}
-			<header className="relative h-flex py-4">
+			<header className="relative h-flex py-4 px-2">
 				<Circle weight="fill" className="fill-fore animate-pulse" />
 				<h1 className="mr-auto">Home</h1>
 				{/*<h1 className="mx-4">Blog</h1>
@@ -76,6 +77,15 @@ function IconTray(props) {
 			>
 				<SpotifyLogo />
 			</a>
+
+			{/*  Linkedin logo  */}
+			<a
+				href="https://www.linkedin.com/in/ashishk1331/"
+				className="p-3 hover:bg-fore/25 rounded-full"
+			>
+				<LinkedinLogo />
+			</a>
+
 		</div>
 	);
 }

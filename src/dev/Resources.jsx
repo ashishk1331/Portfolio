@@ -1,16 +1,25 @@
 "use client";
+import AppList from "./AppList";
+
 import black from "../../images/logos/black_list_logo.svg";
 import pro from "../../images/logos/pro_checklist_logo.svg";
 
 export default function (props) {
 	const map = [
 		{
+			name: "black list",
 			image: black,
 			url: "https://black-list-delta.vercel.app/",
+			github: "https://github.com/ashishk1331/black-list",
+			description:
+				"All the conference talks I've gone through in order to learn the inner workings of JS frameworks like ReactJS.",
 		},
 		{
+			name: "pro checklist",
 			image: pro,
 			url: "https://pro-checklist.vercel.app/",
+			description: "https://github.com/ashishk1331/ProjectCheckList/tree/main/next-app",
+			description: "A hand-picked collection of exercises to upskill your React game.",
 		},
 	];
 
@@ -27,17 +36,8 @@ export default function (props) {
 			</p>
 
 			<p>Resources I'm forging :helping-hand:</p>
-			<div className="w-full my-4 flex flex-wrap items-center gap-4">
-				{map.map(({ image, url }, index) => (
-					<a href={url} key={index + "res"}>
-						<img
-							src={image}
-							alt="feather"
-							className="w-16 h-16 aspect-square rounded-xl shadow-xl cursor-pointer mt-4"
-						/>
-					</a>
-				))}
-			</div>
+			<AppList data={map}/>
+
 		</section>
 	);
 }
