@@ -1,0 +1,466 @@
+[
+    {
+        "object": "block",
+        "id": "424e1687-53df-4952-b6ca-fe9ef379d902",
+        "parent": {
+            "type": "page_id",
+            "page_id": "c9ba5f43-4605-467f-b91a-7e2e6f36b9cc"
+        },
+        "created_time": "2023-06-17T08:13:00.000Z",
+        "last_edited_time": "2023-06-17T08:13:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "a8b73ecc-1a98-42d8-a5c5-91ca698bb8d8"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "a8b73ecc-1a98-42d8-a5c5-91ca698bb8d8"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Hola amigos!",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Hola amigos!",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "b4b22c6c-edb3-43bf-80ca-cc0fa9e05229",
+        "parent": {
+            "type": "page_id",
+            "page_id": "c9ba5f43-4605-467f-b91a-7e2e6f36b9cc"
+        },
+        "created_time": "2023-06-17T08:13:00.000Z",
+        "last_edited_time": "2023-06-17T08:22:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "a8b73ecc-1a98-42d8-a5c5-91ca698bb8d8"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "a8b73ecc-1a98-42d8-a5c5-91ca698bb8d8"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Here goes my first blog of the year. Well, I’d written this blog about two years ago in one of my dusty diaries. I myself am a big fan of one page, more specifically this whole idea of encapsulating all your social and important links in one simple and designable webpage is ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Here goes my first blog of the year. Well, I’d written this blog about two years ago in one of my dusty diaries. I myself am a big fan of one page, more specifically this whole idea of encapsulating all your social and important links in one simple and designable webpage is ",
+                    "href": null
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "clever",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": true,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "clever",
+                    "href": null
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": ". To put it in more simple words, it is your more comprehensive business card.",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": ". To put it in more simple words, it is your more comprehensive business card.",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "5330ed02-f1a2-4fc9-a53d-315e07881ab5",
+        "parent": {
+            "type": "page_id",
+            "page_id": "c9ba5f43-4605-467f-b91a-7e2e6f36b9cc"
+        },
+        "created_time": "2023-06-17T08:20:00.000Z",
+        "last_edited_time": "2023-06-17T08:37:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "a8b73ecc-1a98-42d8-a5c5-91ca698bb8d8"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "a8b73ecc-1a98-42d8-a5c5-91ca698bb8d8"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "You need not be a code geek to run a simple one-page for yourself. There are various one-page providers like the old Boss of the floor, ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "You need not be a code geek to run a simple one-page for yourself. There are various one-page providers like the old Boss of the floor, ",
+                    "href": null
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Linktree",
+                        "link": {
+                            "url": "https://linktr.ee/"
+                        }
+                    },
+                    "annotations": {
+                        "bold": true,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Linktree",
+                    "href": "https://linktr.ee/"
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": " (who by the way recently acquired ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": " (who by the way recently acquired ",
+                    "href": null
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Bento",
+                        "link": {
+                            "url": "https://bento.me/en/home"
+                        }
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Bento",
+                    "href": "https://bento.me/en/home"
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": ", a more delightful way of creating tile-based one-pagers), ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": ", a more delightful way of creating tile-based one-pagers), ",
+                    "href": null
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "BiodotLink",
+                        "link": {
+                            "url": "https://bio.link/"
+                        }
+                    },
+                    "annotations": {
+                        "bold": true,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "BiodotLink",
+                    "href": "https://bio.link/"
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "( my favorite one-pager provider), the CNBC-starred ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "( my favorite one-pager provider), the CNBC-starred ",
+                    "href": null
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Flowpage",
+                        "link": {
+                            "url": "https://www.flowcode.com/page"
+                        }
+                    },
+                    "annotations": {
+                        "bold": true,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Flowpage",
+                    "href": "https://www.flowcode.com/page"
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "(a tool from whom all this started) and the underdog ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "(a tool from whom all this started) and the underdog ",
+                    "href": null
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Linkpop",
+                        "link": {
+                            "url": "https://www.linkpop.com/en/"
+                        }
+                    },
+                    "annotations": {
+                        "bold": true,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Linkpop",
+                    "href": "https://www.linkpop.com/en/"
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "( contender released and maintained by the tech giant Shopify).",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "( contender released and maintained by the tech giant Shopify).",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "3a491b43-78aa-43a3-913a-c07469f3cde2",
+        "parent": {
+            "type": "page_id",
+            "page_id": "c9ba5f43-4605-467f-b91a-7e2e6f36b9cc"
+        },
+        "created_time": "2023-06-17T08:38:00.000Z",
+        "last_edited_time": "2023-06-17T08:42:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "a8b73ecc-1a98-42d8-a5c5-91ca698bb8d8"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "a8b73ecc-1a98-42d8-a5c5-91ca698bb8d8"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "There are also more code-related one-page builders like ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "There are also more code-related one-page builders like ",
+                    "href": null
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Glitch in Bio",
+                        "link": {
+                            "url": "https://glitch.com/edit/#!/remix/glitch-in-bio"
+                        }
+                    },
+                    "annotations": {
+                        "bold": true,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Glitch in Bio",
+                    "href": "https://glitch.com/edit/#!/remix/glitch-in-bio"
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": ". ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": true,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": ". ",
+                    "href": null
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "It provides a small list of predefined themes and the ability to add and remove links to your page by modifying a JSON file.",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "It provides a small list of predefined themes and the ability to add and remove links to your page by modifying a JSON file.",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "bff0bfbd-135c-44d0-83fe-f5c719c65c54",
+        "parent": {
+            "type": "page_id",
+            "page_id": "c9ba5f43-4605-467f-b91a-7e2e6f36b9cc"
+        },
+        "created_time": "2023-06-17T08:36:00.000Z",
+        "last_edited_time": "2023-06-17T08:36:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "a8b73ecc-1a98-42d8-a5c5-91ca698bb8d8"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "a8b73ecc-1a98-42d8-a5c5-91ca698bb8d8"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [],
+            "color": "default"
+        }
+    }
+]

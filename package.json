@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "node ./notion/server.js && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
