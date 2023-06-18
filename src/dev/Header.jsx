@@ -16,18 +16,36 @@ import imagemd from "../../images/hero/md-768px.png";
 import imagesm from "../../images/hero/sm-640px.png";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { Link, useResolvedPath } from "react-router-dom";
+import { twMerge } from "tailwind-merge";
 
 export default function (props) {
 	const [openMenu, setOpenMenu] = useState(false);
-
+	const { pathname } = useResolvedPath();
+	let path = pathname.substring(1);
+	
 	return (
 		<>
 			{/*  Navigation header  */}
 			<header className="relative h-flex py-4 px-2">
 				<Circle weight="fill" className="fill-fore animate-pulse" />
-				<h1 className="mr-auto">Home</h1>
-				{/*<h1 className="mx-4">Blog</h1>
-				<h1>Cases</h1>*/}
+				<Link
+					to="/"
+					className={twMerge(path.length === 0 && "mr-auto")}
+				>
+					<h1>Home</h1>
+				</Link>
+				{path.length > 0 && <h1>/</h1>}
+				{(path.length === 0 || path === "blog") && (
+					<Link to="/blog" className={twMerge(path.length === 0 && "mr-4")}>
+						<h1>Blog</h1>
+					</Link>
+				)}
+				{/*{(path.length === 0 || path === "cases") && (
+					<Link to="/cases">
+						<h1>Cases</h1>
+					</Link>
+				)}*/}
 			</header>
 
 			{/*  Hero Image placement  */}
@@ -46,7 +64,6 @@ export default function (props) {
 
 			{/*  Icon Tray  */}
 			<IconTray />
-
 		</>
 	);
 }
@@ -85,7 +102,6 @@ function IconTray(props) {
 			>
 				<LinkedinLogo />
 			</a>
-
 		</div>
 	);
 }

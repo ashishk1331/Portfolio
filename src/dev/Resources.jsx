@@ -18,7 +18,7 @@ export default function (props) {
 			name: "pro checklist",
 			image: pro,
 			url: "https://pro-checklist.vercel.app/",
-			description: "https://github.com/ashishk1331/ProjectCheckList/tree/main/next-app",
+			github: "https://github.com/ashishk1331/ProjectCheckList/tree/main/next-app",
 			description: "A hand-picked collection of exercises to upskill your React game.",
 		},
 	];
