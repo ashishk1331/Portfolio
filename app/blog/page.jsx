@@ -10,11 +10,11 @@ export default async function Blog(props) {
 	let blogs = await getBlogs()
 
 	return (
-		<div className="container mx-auto p-4 md:p-8">
+		<>
 			<Header />
 			<List blogs={blogs}/>
 			<Footer />
-		</div>
+		</>
 	);
 }
 

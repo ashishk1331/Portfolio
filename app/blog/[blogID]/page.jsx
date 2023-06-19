@@ -13,13 +13,41 @@ export default async function Page(props) {
 	let blocks = await getBlocks(blogID);
 
 	return (
-		<div className="container mx-auto p-4 md:p-8">
+		<>
 			<Header slug={slugify(pageData.title, { lower: true })} />
 			<FrontMatter pageData={pageData} />
 			<Parser blocks={blocks} />
 			<Footer />
-		</div>
+		</>
 	);
+}
+
+export async function generateStaticParams() {
+	const notion = new Client({
+		auth: process.env.NOTION_TOKEN,
+	});
+
+	let allBlogIDs = [];
+
+	await notion.databases
+		.query({
+			database_id: process.env.NOTION_DATABASE,
+			sorts: [
+				{
+					property: "Created",
+					direction: "ascending",
+				},
+			],
+		})
+		.then(({ results }) => {
+			results.forEach((blog) => {
+				allBlogIDs.push({
+					blogID: blog.id,
+				});
+			});
+		});
+
+	return allBlogIDs;
 }
 
 async function getPageData(pageId) {

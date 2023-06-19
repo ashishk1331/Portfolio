@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Roboto_Mono } from "next/font/google";
 import Head from "next/head";
+import { twMerge } from "tailwind-merge";
 
 const roboto = Roboto_Mono({
     style: ["normal", "italic"],
@@ -54,7 +55,7 @@ export default function RootLayout({ children }) {
                 />
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
-            <body className={roboto.className}>{children}</body>
+            <body className={twMerge( "container mx-auto p-6 md:p-8", roboto.className)}>{children}</body>
         </html>
     );
 }

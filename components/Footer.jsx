@@ -3,7 +3,7 @@ import { FinnTheHuman } from "@phosphor-icons/react";
 
 export default function (props) {
 	return (
-		<footer className="flex flex-col items-center gap-1 p-4 mt-24 mb-8">
+		<footer className="flex flex-col items-center gap-1 p-4 mt-24 mb-8 text-center">
 			<FinnTheHuman weight="fill" className="w-12 h-12 fill-fore/50" />
 			<h3>Thank you for visiting!</h3>
 			<h3>

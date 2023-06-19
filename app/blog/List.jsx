@@ -15,7 +15,7 @@ export default function (props) {
 
 function Item(props) {
 	return (
-		<li className="mt-8">
+		<li className="mt-8 [&:nth-child(odd)]:border-2 [&:nth-child(odd)]:border-fore/25 rounded-md p-4">
 			<Link href={`/blog/${props.id}`}>
 				<h1 className="border-b-2 border-fore/50 w-fit cursor-pointer">
 					{props.title}
