@@ -6,8 +6,8 @@ export default function(props){
 			<h1 className="text-4xl">
 				{ props.pageData.title }
 			</h1>
-			<p className="text-slate-500">
-				written in {format(new Date(props.pageData.created_time), "dd MMM yyyy")}
+			<p className="uppercase">
+				{format(new Date(props.pageData.created_time), "MMMM dd, yyyy")}
 			</p>
 		</section>
 	)

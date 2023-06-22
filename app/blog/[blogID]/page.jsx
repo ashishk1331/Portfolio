@@ -15,7 +15,6 @@ export default async function Page(props) {
 	return (
 		<>
 			<Header slug={slugify(pageData.title, { lower: true })} />
-			<FrontMatter pageData={pageData} />
 			<Parser blocks={blocks} />
 			<Footer />
 		</>
