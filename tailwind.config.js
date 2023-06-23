@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            '--tw-prose-quote-borders': theme('colors.foreHalf'),
+          },
+        },
+      }),
       colors: {
         green: "#7ED957",
         black: "#000000",
@@ -14,8 +21,9 @@ module.exports = {
         white: "#ffffff",
         gray: "#C4C4C4",
         fore: "#8B5CF6",
+        foreHalf: "#8b5cf680",
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require('@tailwindcss/forms')],
 };
