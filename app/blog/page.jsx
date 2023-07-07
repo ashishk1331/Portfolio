@@ -5,6 +5,8 @@ import Header from "./Header";
 import Footer from "@/components/Footer";
 import List from "./List"
 
+export const revalidate = 86400;
+
 export default async function Blog(props) {
 	
 	let blogs = await getBlogs()
@@ -31,7 +33,7 @@ async function getBlogs() {
 			sorts: [
 				{
 					property: "Created",
-					direction: "ascending",
+					direction: "descending",
 				},
 			],
 		})

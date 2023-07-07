@@ -3,9 +3,10 @@ import { Client } from "@notionhq/client";
 // Component files
 import Header from "./Header";
 import Footer from "@/components/Footer";
-import Parser from "./useParser";
-import FrontMatter from "./FrontMatter";
+import { Parser } from "tetrapack";
 import slugify from "slugify";
+
+export const revalidate = 86400;
 
 export default async function Page(props) {
 	let { blogID } = props.params;
@@ -15,7 +16,43 @@ export default async function Page(props) {
 	return (
 		<>
 			<Header slug={slugify(pageData.title, { lower: true })} />
-			<Parser blocks={blocks} getBlocks={getBlocks}/>
+			<Parser blocks={blocks} getBlocks={getBlocks}>
+				{() => ({
+					blocks: {
+						to_do: (text, checked) => (
+							<span className="h-flex">
+								<input
+									checked={checked}
+									readOnly
+									type="checkbox"
+									className="form-checkbox rounded text-fore"
+								/>
+								<p>{text}</p>
+							</span>
+						),
+						callout: function(text, callout_image) {
+							<span className="p-4 border border-fore/50 rounded my-8">
+								{this.callout_image()}
+								<p>{text}</p>
+							</span>
+						},
+						callout_image: () => (
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								className="fill-fore inline m-4 float-left"
+								viewBox="0 0 256 256"
+							>
+								<path d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.93,166,26.5,143a16,16,0,0,1,0-30L90,89.93,113,26.5a16,16,0,0,1,30,0L166.07,90,229.5,113A15.79,15.79,0,0,1,240,128Z" />
+							</svg>
+						),
+					},
+					wrapper: (text) => (
+						<article className="prose my-4 mx-auto flex flex-col gap-2">
+							{text}
+						</article>
+					),
+				})}
+			</Parser>
 			<Footer />
 		</>
 	);
@@ -34,7 +71,7 @@ export async function generateStaticParams() {
 			sorts: [
 				{
 					property: "Created",
-					direction: "ascending",
+					direction: "descending",
 				},
 			],
 		})
