@@ -2,7 +2,6 @@
 import AppList from "./AppList";
 
 import black from "../images/logos/black_list_logo.svg";
-import pro from "../images/logos/pro_checklist_logo.svg";
 
 export default function (props) {
 	const map = [
@@ -13,13 +12,6 @@ export default function (props) {
 			github: "https://github.com/ashishk1331/black-list",
 			description:
 				"All the conference talks I've gone through in order to learn the inner workings of JS frameworks like ReactJS.",
-		},
-		{
-			name: "pro checklist",
-			image: pro,
-			url: "https://pro-checklist.vercel.app/",
-			github: "https://github.com/ashishk1331/ProjectCheckList/tree/main/next-app",
-			description: "A hand-picked collection of exercises to upskill your React game.",
 		},
 	];
 
@@ -36,8 +28,7 @@ export default function (props) {
 			</p>
 
 			<p>Resources I'm forging :helping-hand:</p>
-			<AppList data={map}/>
-
+			<AppList data={map} />
 		</section>
 	);
 }

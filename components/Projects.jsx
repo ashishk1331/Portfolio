@@ -2,19 +2,23 @@
 import AppList from './AppList'
 
 import feather from "@/images/logos/feather_logo.svg";
+import labels from "@/images/logos/labels_logo.svg";
+import emojitar from "@/images/logos/emojitar_logo.svg";
+import tetrapack from "@/images/logos/tetrapack_logo.svg";
 import commit from "@/images/logos/commit_logo.svg";
-import saturn from "@/images/logos/saturn_logo.svg";
-import weather from "@/images/logos/weather_logo.svg";
-import pinloader from "@/images/logos/pin_loader_logo.svg";
 import urban from "@/images/logos/urban_logo.svg";
-import shakespeare from "@/images/logos/shakespeare_logo.svg";
 import watched from "@/images/logos/watched_logo.svg";
 import hotScore from "@/images/logos/hot_score_logo.svg";
-import spark from "@/images/logos/Spark_logo.svg";
-import flare from "@/images/logos/flare_logo.svg";
 
 export default function (props) {
 	const main = [
+		{
+			name: "tetrapack",
+			image: tetrapack,
+			url: "https://tetra-docs.vercel.app/",
+			github: "https://github.com/ashishk1331/tetrapack",
+			description: "A fast and semantic Notion API data renderer for react projects."
+		},
 		{
 			name: "urban player",
 			image: urban,
@@ -30,25 +34,18 @@ export default function (props) {
 			description: "The no BS daily todo app made with a minimal touch."
 		},
 		{
-			name: "saturn",
-			image: saturn,
-			url: "https://saturn-sand.vercel.app/",
-			github: "https://github.com/ashishk1331/Saturn",
-			description: "A font pairing game that can help you discover and pair weird fonts together."
+			name: "emojitars",
+			image: emojitar,
+			url: "https://emojitars.super.site/",
+			github: "https://github.com/ashishk1331/emojitar",
+			description: "An avatar libraray for your next react project."
 		},
 		{
-			name: "pinloader",
-			image: pinloader,
-			url: "https://pin-loader.vercel.app/",
-			github: "https://github.com/ashishk1331/PinLoader",
-			description: "A service to download pinterest posts."
-		},
-		{
-			name: "shakespeare",
-			image: shakespeare,
-			url: "https://shakespeare-ipsum.vercel.app/",
-			github: "https://github.com/ashishk1331/shakespeare-ipsum",
-			description: "A lorem ipsum generator for the shakespeare lovers."
+			name: "labels",
+			image: labels,
+			url: "https://labels-omega.vercel.app/",
+			github: "https://github.com/ashishk1331/labels",
+			description: "A fresh take on SVG badges."
 		},
 		{
 			name: "watched",
@@ -76,23 +73,6 @@ export default function (props) {
 		},
 	];
 
-	const mini = [
-		{
-			name: "spark",
-			image: spark,
-			url: "https://ashishk1331.github.io/spark/",
-			github: "https://github.com/ashishk1331/spark",
-			description: "A random word generator for your daily dose inspiration."
-		},
-		{
-			name: "flare",
-			image: flare,
-			url: "https://ashishk1331.github.io/Flare/",
-			github: "https://github.com/ashishk1331/Flare",
-			description: "A lighting solution for photography."
-		},
-	];
-
 	return (
 		<section id="projects" className="p-2 mt-12">
 			<h1 className="text-4xl">
@@ -115,10 +95,6 @@ export default function (props) {
 
 			<p>Under construction area :hammer:</p>
 			<AppList data={under}/>
-			
-
-			<p>The :relaxing-man: weekend projects</p>
-			<AppList data={mini}/>
 
 		</section>
 	);
