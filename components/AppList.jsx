@@ -4,10 +4,10 @@ import Image from "next/image";
 function Item({ url, image, name, github, description }) {
 	return (
 		<li className=" flex flex-col items-left [&:not(:last-child)]:mb-8">
-			<div className="h-flex gap-4">
+			<a href={url} className="h-flex gap-4">
 				<Image src={image} width={32} height={32} alt={name} className="rounded p-0 m-0" />
 				<p className="lead text-black font-bold">{name}</p>
-			</div>
+			</a>
 			<p>{description}</p>
 		</li>
 	);
