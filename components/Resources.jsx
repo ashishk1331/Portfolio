@@ -1,6 +1,4 @@
-"use client";
 import AppList from "./AppList";
-
 import black from "../images/logos/black_list_logo.svg";
 
 export default function (props) {
@@ -16,9 +14,9 @@ export default function (props) {
 	];
 
 	return (
-		<section id="resources" className="p-2 mt-12">
-			<h1 className="text-4xl">
-				I adore <p className="inline text-fore">VDOM</p>
+		<>
+			<h1>
+				I adore <mark className="text-primary bg-transparent">VDOM</mark>
 			</h1>
 
 			<p>
@@ -29,6 +27,6 @@ export default function (props) {
 
 			<p>Resources I'm forging :helping-hand:</p>
 			<AppList data={map} />
-		</section>
+		</>
 	);
 }

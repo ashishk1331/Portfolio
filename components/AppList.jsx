@@ -1,37 +1,21 @@
-import { GithubLogo } from "@phosphor-icons/react";
+import Icon from "@/components/icon_set";
 import Image from "next/image";
 
-function Item(props) {
+function Item({ url, image, name, github, description }) {
 	return (
-		<li className="w-full p-4 my-2 border-2 border-fore/50 rounded-xl flex flex-col items-left gap-2">
-			<div className="h-flex">
-				<a href={props.url} className="h-flex mr-auto">
-					<Image
-						src={props.image}
-						alt="feather"
-						className="w-16 h-16 aspect-square rounded-xl shadow-xl cursor-pointer"
-					/>
-					<h2 className="font-bold text-xl uppercase">
-						{props.name}
-					</h2>
-				</a>
-
-				<a
-					href={props.github}
-					className="p-4 border-2 border-fore/50 rounded-full"
-				>
-					<GithubLogo />
-				</a>
+		<li className=" flex flex-col items-left [&:not(:last-child)]:mb-8">
+			<div className="h-flex gap-4">
+				<Image src={image} width={32} height={32} alt={name} className="rounded p-0 m-0" />
+				<p className="lead text-black font-bold">{name}</p>
 			</div>
-
-			<p>{props.description}</p>
+			<p>{description}</p>
 		</li>
 	);
 }
 
 export default function (props) {
 	return (
-		<ul className="w-full my-4 grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+		<ul className="w-full my-4">
 			{props.data.map((item, index) => (
 				<Item {...item} key={index + "under"} />
 			))}

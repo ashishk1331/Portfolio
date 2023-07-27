@@ -1,12 +1,4 @@
-"use client";
-import {
-	Circle,
-	GithubLogo,
-	TwitterLogo,
-	SpotifyLogo,
-	LinkedinLogo,
-} from "@phosphor-icons/react";
-
+import Icon from "@/components/icon_set";
 
 export default function IconTray(props) {
 	return (
@@ -16,7 +8,7 @@ export default function IconTray(props) {
 				href="https://github.com/ashishk1331"
 				className="p-3 hover:bg-fore/25 rounded-full"
 			>
-				<GithubLogo />
+				<Icon name="Github" />
 			</a>
 
 			{/*  Twitter logo  */}
@@ -24,7 +16,7 @@ export default function IconTray(props) {
 				href="https://twitter.com/AshishK1331"
 				className="p-3 hover:bg-fore/25 rounded-full"
 			>
-				<TwitterLogo />
+				<Icon name="Twitter" />
 			</a>
 
 			{/*  Spotify logo  */}
@@ -32,7 +24,7 @@ export default function IconTray(props) {
 				href="https://open.spotify.com/user/nwo0j3ix1j5mbwl0l3anytu29"
 				className="p-3 hover:bg-fore/25 rounded-full"
 			>
-				<SpotifyLogo />
+				<Icon name="Spotify" />
 			</a>
 
 			{/*  Linkedin logo  */}
@@ -40,7 +32,7 @@ export default function IconTray(props) {
 				href="https://www.linkedin.com/in/ashishk1331/"
 				className="p-3 hover:bg-fore/25 rounded-full"
 			>
-				<LinkedinLogo />
+				<Icon name="LinkedIn" />
 			</a>
 		</div>
 	);

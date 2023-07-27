@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+	@apply bg-secondary;
+}
 
 .h-flex{
-	@apply flex items-center gap-4
+	@apply flex items-center
 }
 
 .v-flex{
-	@apply flex flex-col items-center gap-4
-}
-
-button{
-	@apply p-2
+	@apply flex flex-col items-center
 }
 
 svg{
@@ -24,12 +23,4 @@ h1{
 
 p{
 	@apply leading-7 [&:not(:first-child)]:my-2
-}
-
-.pill{
-	@apply bg-green text-black w-fit p-1 px-3 rounded-full text-xs font-bold tracking-wide lowercase
-}
-
-.button-primary{
-	@apply p-0 px-6 h-flex bg-black rounded-full overflow-hidden text-white
 }

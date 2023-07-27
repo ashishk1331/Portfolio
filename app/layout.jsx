@@ -1,10 +1,9 @@
 import "./globals.css";
-import { Roboto_Mono } from "next/font/google";
+import { Inconsolata } from "next/font/google";
 import Head from "next/head";
 import { twMerge } from "tailwind-merge";
 
-const roboto = Roboto_Mono({
-    style: ["normal", "italic"],
+const font = Inconsolata({
     subsets: ["latin"],
     display: "swap",
     weight: ["300", "400", "500", "600", "700"],
@@ -35,27 +34,15 @@ export default function RootLayout({ children }) {
                     property="og:image"
                     content="https://res.cloudinary.com/delxpwsul/image/upload/v1679996217/og_white_lrvpzc.png"
                 />
-
-                <link
-                    rel="apple-touch-icon"
-                    sizes="180x180"
-                    href="/apple-touch-icon.png"
-                />
-                <link
-                    rel="icon"
-                    type="image/png"
-                    sizes="32x32"
-                    href="/favicon-32x32.png"
-                />
-                <link
-                    rel="icon"
-                    type="image/png"
-                    sizes="16x16"
-                    href="/favicon-16x16.png"
-                />
-                <link rel="manifest" href="/site.webmanifest" />
             </Head>
-            <body className={twMerge( "container mx-auto p-6 md:p-8", roboto.className)}>{children}</body>
+            <body
+                className={twMerge(
+                    "prose prose-lg prose-neutral mx-auto marker:text-primary p-4 px-8",
+                    font.className
+                )}
+            >
+                {children}
+            </body>
         </html>
     );
 }

@@ -1,20 +1,19 @@
-"use client";
-import { Circle } from "@phosphor-icons/react";
+import Icon from "@/components/icon_set";
 import Link from "next/link";
 
 export default function (props) {
 	return (
-		<header className="relative h-flex flex-wrap py-4 px-2 mb-8">
-			<Circle weight="fill" className="fill-fore animate-pulse" />
+		<header className="relative h-flex gap-2 flex-wrap py-4 px-2">
+			<Icon name="Circle" />
 			<Link href="/">
-				<h1>Home</h1>
+				<p>Home</p>
 			</Link>
-			<h1>/</h1>
+			<p>/</p>
 			<Link href="/blog">
-				<h1>Blog</h1>
+				<p>Blog</p>
 			</Link>
-			<h1>/</h1>
-			<h1>{props.slug}</h1>
+			<p>/</p>
+			<p>{props.slug}</p>
 		</header>
 	);
 }

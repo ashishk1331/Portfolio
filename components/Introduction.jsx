@@ -1,8 +1,8 @@
 export default function(props) {
 	return (
-		<main className="p-2 mt-12">
-			<h1 className="text-4xl">
-				<p className="inline text-fore">AshishK</p> is back
+		<>
+			<h1>
+				<mark className="text-primary bg-transparent">AshishK</mark> is back
 			</h1>
 
 			<p>
@@ -18,6 +18,6 @@ export default function(props) {
 				"controversy". :wink:
 			</p>
 			<p>And yes! I deliberately left out the dark mode. :evil-laugh:</p>
-		</main>
+		</>
 	);
 }

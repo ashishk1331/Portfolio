@@ -5,6 +5,7 @@ import Header from "./Header";
 import Footer from "@/components/Footer";
 import { Parser } from "tetrapack";
 import slugify from "slugify";
+import Image from "next/image";
 
 export const revalidate = 86400;
 
@@ -19,6 +20,18 @@ export default async function Page(props) {
 			<Parser blocks={blocks} getBlocks={getBlocks}>
 				{() => ({
 					blocks: {
+						image: (caption, url, key) => (
+							<figure key={key}>
+								<Image
+									width={1040}
+									height={1040}
+									src={url}
+									alt="image found"
+									className="object-contain rounded"
+								/>
+								<figcaption>{caption}</figcaption>
+							</figure>
+						),
 						to_do: (text, checked) => (
 							<span className="h-flex">
 								<input
@@ -30,11 +43,11 @@ export default async function Page(props) {
 								<p>{text}</p>
 							</span>
 						),
-						callout: function(text, callout_image) {
+						callout: function (text, callout_image) {
 							<span className="p-4 border border-fore/50 rounded my-8">
 								{this.callout_image()}
 								<p>{text}</p>
-							</span>
+							</span>;
 						},
 						callout_image: () => (
 							<svg
@@ -47,7 +60,7 @@ export default async function Page(props) {
 						),
 					},
 					wrapper: (text) => (
-						<article className="prose my-4 mx-auto flex flex-col gap-2">
+						<article className="relative flex flex-col items-left gap-2">
 							{text}
 						</article>
 					),

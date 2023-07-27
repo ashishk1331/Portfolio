@@ -1,4 +1,3 @@
-"use client";
 import AppList from './AppList'
 
 import feather from "@/images/logos/feather_logo.svg";
@@ -74,9 +73,9 @@ export default function (props) {
 	];
 
 	return (
-		<section id="projects" className="p-2 mt-12">
-			<h1 className="text-4xl">
-				<p className="inline text-fore">tailwind</p> is all I need.
+		<>
+			<h1>
+				<mark className="text-primary bg-transparent">tailwind</mark> is all I need.
 			</h1>
 
 			<p>
@@ -96,6 +95,6 @@ export default function (props) {
 			<p>Under construction area :hammer:</p>
 			<AppList data={under}/>
 
-		</section>
+		</>
 	);
 }
