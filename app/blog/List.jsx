@@ -1,18 +1,38 @@
 import { format } from "date-fns";
 import Link from "next/link";
+import Icon from "@/components/icon_set";
 
 export default function (props) {
 	return props.blogs.map((data) => <Item key={data.id} {...data} />);
 }
 
-function Item(props) {
+function getTagString(tags) {
+	let res = "";
+	for (let i = 0; i < tags.length; i++) {
+		res += tags[i].name;
+		if(i < tags.length - 1){
+			res += ", ";
+		}
+	}
+	return res;
+}
+
+function Item({ id, title, created_time, summary, tags }) {
 	return (
 		<div className="[&:not(:last-child)]:mb-8">
-			<Link href={`/blog/${props.id}`}>
-				<h3 className="cursor-pointer">{props.title}</h3>
+			<Link href={`/blog/${id}`} className="flex items-baseline gap-4">
+				<h3 className="cursor-pointer">{title}</h3>
 			</Link>
-			<small className="font-bold">{format(new Date(props.created_time), "dd MMM yyyy")}</small>
-			<p>{props.summary}</p>
+			<div className="h-flex gap-2">
+				<small className="font-bold">
+					{format(new Date(created_time), "dd MMM yyyy")}
+				</small>
+				<Icon name="Circle" className="w-2 h-2" />
+				<small className="font-bold">
+					{getTagString(tags)}
+				</small>
+			</div>
+			<p className="lead">{summary}</p>
 		</div>
 	);
 }

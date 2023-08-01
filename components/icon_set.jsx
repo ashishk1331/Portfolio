@@ -36,6 +36,18 @@ export function ArrowUp() {
 	);
 }
 
+export function ArrowLeft() {
+	return (
+		<path d="M230,144a62.07,62.07,0,0,1-62,62H80a6,6,0,0,1,0-12h88a50,50,0,0,0,0-100H46.49l37.75,37.76a6,6,0,1,1-8.48,8.48l-48-48a6,6,0,0,1,0-8.48l48-48a6,6,0,0,1,8.48,8.48L46.49,82H168A62.07,62.07,0,0,1,230,144Z"></path>
+	);
+}
+
+export function Home() {
+	return (
+		<path d="M240,208H224V115.55a16,16,0,0,0-5.17-11.78l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16Zm-88,0H104V160a8,8,0,0,1,8-8h32a8,8,0,0,1,8,8Z"></path>
+	);
+}
+
 export default function ({ name, className }) {
 	let icon = null;
 	switch (name) {
@@ -57,9 +69,20 @@ export default function ({ name, className }) {
 		case "ArrowUp":
 			icon = ArrowUp();
 			break;
+		case "ArrowLeft":
+			icon = ArrowLeft();
+			break;
+		case "Home":
+			icon = Home();
+			break;
 	}
 	return (
-		<svg width="32" height="32" viewBox="0 0 256 256" className={twMerge(className, "fill-primary")}>
+		<svg
+			width="32"
+			height="32"
+			viewBox="0 0 256 256"
+			className={twMerge("fill-primary", className)}
+		>
 			{icon}
 		</svg>
 	);

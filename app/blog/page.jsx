@@ -3,18 +3,19 @@ import { Client } from "@notionhq/client";
 // Components
 import Header from "./Header";
 import Footer from "@/components/Footer";
-import List from "./List"
+import GoBack from "@/components/GoBack";
+import List from "./List";
 
-export const revalidate = 86400;
+export const revalidate = 3600 * 12;
 
 export default async function Blog(props) {
-	
-	let blogs = await getBlogs()
+	let blogs = await getBlogs();
 
 	return (
 		<>
 			<Header />
-			<List blogs={blogs}/>
+			<GoBack href="/" />
+			<List blogs={blogs} />
 			<Footer />
 		</>
 	);

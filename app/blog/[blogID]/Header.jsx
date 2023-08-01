@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function (props) {
 	return (
 		<header className="relative h-flex gap-2 flex-wrap py-4 px-2">
-			<Icon name="Circle" />
+			<Icon name="Home" />
 			<Link href="/">
 				<p>Home</p>
 			</Link>

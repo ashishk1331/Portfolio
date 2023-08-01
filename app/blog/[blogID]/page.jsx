@@ -3,11 +3,12 @@ import { Client } from "@notionhq/client";
 // Component files
 import Header from "./Header";
 import Footer from "@/components/Footer";
+import GoBack from "@/components/GoBack";
 import { Parser } from "tetrapack";
 import slugify from "slugify";
 import Image from "next/image";
 
-export const revalidate = 86400;
+export const revalidate = 3600 * 12;
 
 export default async function Page(props) {
 	let { blogID } = props.params;
@@ -17,6 +18,7 @@ export default async function Page(props) {
 	return (
 		<>
 			<Header slug={slugify(pageData.title, { lower: true })} />
+			<GoBack href="/blog" />
 			<Parser blocks={blocks} getBlocks={getBlocks}>
 				{() => ({
 					blocks: {

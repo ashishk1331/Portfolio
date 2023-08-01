@@ -8,7 +8,7 @@ function Item({ url, image, name, github, description }) {
 				<Image src={image} width={32} height={32} alt={name} className="rounded p-0 m-0" />
 				<p className="lead text-black font-bold">{name}</p>
 			</a>
-			<p>{description}</p>
+			<p className="lead">{description}</p>
 		</li>
 	);
 }
