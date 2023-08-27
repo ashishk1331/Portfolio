@@ -81,7 +81,7 @@ export default function ({ name, className }) {
 			width="32"
 			height="32"
 			viewBox="0 0 256 256"
-			className={twMerge("fill-primary", className)}
+			className={twMerge("fill-zinc-400" , className)}
 		>
 			{icon}
 		</svg>

@@ -10,7 +10,7 @@ function getTagString(tags) {
 	let res = "";
 	for (let i = 0; i < tags.length; i++) {
 		res += tags[i].name;
-		if(i < tags.length - 1){
+		if (i < tags.length - 1) {
 			res += ", ";
 		}
 	}
@@ -19,20 +19,20 @@ function getTagString(tags) {
 
 function Item({ id, title, created_time, summary, tags }) {
 	return (
-		<div className="[&:not(:last-child)]:mb-8">
-			<Link href={`/blog/${id}`} className="flex items-baseline gap-4">
-				<h3 className="cursor-pointer">{title}</h3>
+		// [&:not(:last-child)]:mb-8
+		<div className="mb-12">
+			<Link href={`/blog/${id}`} className="no-underline">
+				<h3 className="cursor-pointer">
+					<mark>#</mark>
+					{title}
+				</h3>
 			</Link>
 			<div className="h-flex gap-2">
-				<small className="font-bold">
-					{format(new Date(created_time), "dd MMM yyyy")}
-				</small>
+				<small>{format(new Date(created_time), "dd MMM yyyy")}</small>
 				<Icon name="Circle" className="w-2 h-2" />
-				<small className="font-bold">
-					{getTagString(tags)}
-				</small>
+				<small>{getTagString(tags)}</small>
 			</div>
-			<p className="lead">{summary}</p>
+			<p className="mt-1">{summary}</p>
 		</div>
 	);
 }

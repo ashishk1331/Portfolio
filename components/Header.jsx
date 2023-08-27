@@ -1,20 +1,16 @@
-import Icon from "@/components/icon_set";
-import Link from "next/link"
-import IconTray from "@/components/IconTray"
+import Link from "next/link";
 
 export default function (props) {
-
 	return (
 		<>
-			<header className="h-flex gap-2">
-				<Icon name="Home" />
-				<p className="mr-auto">Home</p>
+			<header className="h-flex gap-4 mt-4">
+				<span>Home</span>
 				<Link href="/blog">
-					<p>Blog</p>
+					<span>Blog</span>
 				</Link>
 			</header>
 
-			<IconTray />
+			<hr />
 		</>
 	);
 }

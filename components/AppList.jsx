@@ -1,21 +1,30 @@
-import Icon from "@/components/icon_set";
 import Image from "next/image";
 
 function Item({ url, image, name, github, description }) {
 	return (
-		<li className=" flex flex-col items-left [&:not(:last-child)]:mb-8">
-			<a href={url} className="h-flex gap-4">
-				<Image src={image} width={32} height={32} alt={name} className="rounded p-0 m-0" />
-				<p className="lead text-black font-bold">{name}</p>
+		<li className="flex flex-col items-left px-3 bg-zinc-900 border-2 border-zinc-800 rounded-md">
+			<a href={url} className="no-underline">
+				<div className="h-flex gap-3">
+					<Image
+						src={image}
+						width={36}
+						height={36}
+						alt={name}
+						className="rounded p-0 m-0"
+					/>
+					<p className="lead text-white font-normal capitalize">
+						{name}
+					</p>
+				</div>
+				<p className="w-full font-thin">{description}</p>
 			</a>
-			<p className="lead">{description}</p>
 		</li>
 	);
 }
 
 export default function (props) {
 	return (
-		<ul className="w-full my-4">
+		<ul className="w-full mx-0 my-4 px-0 list-style-none grid grid-cols-1 sm:grid-cols-2 gap-3">
 			{props.data.map((item, index) => (
 				<Item {...item} key={index + "under"} />
 			))}

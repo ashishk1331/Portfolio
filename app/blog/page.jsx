@@ -10,11 +10,16 @@ export const revalidate = 3600 * 12;
 
 export default async function Blog(props) {
 	let blogs = await getBlogs();
-
 	return (
 		<>
 			<Header />
 			<GoBack href="/" />
+
+			<h2>Blog Section</h2>
+			<span>I usually don't write. Rather, I love to leave soul-crushing comments on blogs of others.</span>
+
+			<hr />
+			
 			<List blogs={blogs} />
 			<Footer />
 		</>

@@ -1,17 +1,17 @@
 import "./globals.css";
-import { Inconsolata } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Head from "next/head";
 import { twMerge } from "tailwind-merge";
 
-const font = Inconsolata({
+const font = Poppins({
     subsets: ["latin"],
     display: "swap",
-    weight: ["300", "400", "500", "600", "700"],
+    weight: ["300", "400", "500", "700"],
 });
 
 export const metadata = {
-    title: "AshishK1331",
-    description: "Hello from ashish khare.",
+    title: "Ashish Khare",
+    description: "This webpage belongs to Ashish Khare.",
 };
 
 export default function RootLayout({ children }) {
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
             </Head>
             <body
                 className={twMerge(
-                    "prose prose-lg prose-neutral mx-auto marker:text-primary p-4 px-8",
+                    "prose prose-invert mx-auto marker:text-primary p-4 px-8",
                     font.className
                 )}
             >

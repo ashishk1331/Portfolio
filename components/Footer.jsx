@@ -8,19 +8,9 @@ export default function (props) {
 			<br />
 			<div>
 				Crafted by{" "}
-				<a href="https://twitter.com/ashishk1331">ashishk1331</a>.
+				<a href="https://twitter.com/ashishk1331" className="font-normal no-underline border-b-2">ashishk1331</a>
 			</div>
-			<div>
-				Hosted on <a href="https://vercel.com/">Vercel</a>.
-			</div>
-			<div>
-				Icons from the{" "}
-				<a href="https://phosphoricons.com/">Phosphor Icons</a>.
-			</div>
-			<div>
-				Source code available on{" "}
-				<a href="https://github.com/ashishk1331/Portfolio">Github</a>.
-			</div>
+			for the fifth time.
 		</footer>
 	);
 }

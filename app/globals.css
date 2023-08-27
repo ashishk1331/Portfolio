@@ -17,10 +17,7 @@ body{
 svg{
 	@apply w-6 h-6
 }
-h1{
-	@apply scroll-m-20 text-xl font-semibold tracking-tight
-}
 
-p{
-	@apply leading-7 [&:not(:first-child)]:my-2
+mark {
+	@apply bg-transparent text-primary mr-2
 }

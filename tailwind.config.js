@@ -16,11 +16,10 @@ module.exports = {
         },
       }),
       colors: {
-        primary: "#FF8551",
-        secondary: "#F8FDCF",
-        tertiary: "#E384FF",
+        primary: "#E384FF",
+        secondary: "#111010",
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };

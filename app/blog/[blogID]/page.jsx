@@ -7,6 +7,7 @@ import GoBack from "@/components/GoBack";
 import { Parser } from "tetrapack";
 import slugify from "slugify";
 import Image from "next/image";
+import BlogMeta from "./blogHeader.jsx";
 
 export const revalidate = 3600 * 12;
 
@@ -19,6 +20,7 @@ export default async function Page(props) {
 		<>
 			<Header slug={slugify(pageData.title, { lower: true })} />
 			<GoBack href="/blog" />
+			<BlogMeta pageData={pageData} />
 			<Parser blocks={blocks} getBlocks={getBlocks}>
 				{() => ({
 					blocks: {
@@ -29,18 +31,20 @@ export default async function Page(props) {
 									height={1040}
 									src={url}
 									alt="image found"
-									className="object-contain rounded"
+									className="object-contain rounded-md"
 								/>
-								<figcaption>{caption}</figcaption>
+								<figcaption className="text-center">
+									{caption}
+								</figcaption>
 							</figure>
 						),
 						to_do: (text, checked) => (
-							<span className="h-flex">
+							<span className="h-flex gap-2">
 								<input
 									checked={checked}
 									readOnly
 									type="checkbox"
-									className="form-checkbox rounded text-fore"
+									className="form-checkbox rounded text-primary bg-zinc-800"
 								/>
 								<p>{text}</p>
 							</span>
@@ -83,12 +87,12 @@ export async function generateStaticParams() {
 	await notion.databases
 		.query({
 			database_id: process.env.NOTION_DATABASE,
-			sorts: [
-				{
-					property: "Created",
-					direction: "descending",
-				},
-			],
+			// sorts: [
+			// 	{
+			// 		property: "Created",
+			// 		direction: "descending",
+			// 	},
+			// ],
 		})
 		.then(({ results }) => {
 			results.forEach((blog) => {

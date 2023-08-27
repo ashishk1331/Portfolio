@@ -1,19 +1,17 @@
-import Icon from "@/components/icon_set";
 import Link from "next/link";
 
 export default function (props) {
 	return (
-		<header className="relative h-flex gap-2 flex-wrap py-4 px-2">
-			<Icon name="Home" />
+		<header className="relative h-flex gap-2 flex-wrap py-4 px-2 mt-4">
 			<Link href="/">
-				<p>Home</p>
+				<span>Home</span>
 			</Link>
-			<p>/</p>
+			<span>/</span>
 			<Link href="/blog">
-				<p>Blog</p>
+				<span>Blog</span>
 			</Link>
-			<p>/</p>
-			<p>{props.slug}</p>
+			<span>/</span>
+			<span>{props.slug}</span>
 		</header>
 	);
 }
