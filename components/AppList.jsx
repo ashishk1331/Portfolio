@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Item({ url, image, name, github, description }) {
 	return (
-		<li className="flex flex-col items-left px-3 bg-zinc-900 border-2 border-zinc-800 rounded-md">
+		<li className="flex flex-col items-left px-5 bg-zinc-900 border-2 border-zinc-800 rounded-md">
 			<a href={url} className="no-underline">
 				<div className="h-flex gap-3">
 					<Image

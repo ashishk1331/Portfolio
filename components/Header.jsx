@@ -1,13 +1,24 @@
 import Link from "next/link";
+import Icon from "./icon_set";
 
 export default function (props) {
 	return (
 		<>
 			<header className="h-flex gap-4 mt-4">
 				<span>Home</span>
-				<Link href="/blog">
+				<Link href="/blog" className="mr-auto">
 					<span>Blog</span>
 				</Link>
+
+				<a href="https://twitter.com/AshishK1331">
+					<Icon name="Twitter" />
+				</a>
+				<a href="https://github.com/ashishk1331">
+					<Icon name="Github" />
+				</a>
+				<a href="https://www.linkedin.com/in/ashishk1331/">
+					<Icon name="LinkedIn" />
+				</a>
 			</header>
 
 			<hr />

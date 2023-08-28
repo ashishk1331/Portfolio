@@ -2,7 +2,6 @@ import AppList from "./AppList";
 import { main, under, map } from "./data.js";
 import Image from "next/image";
 import painImage from "@/public/banner.jpeg";
-import bannerImage from "@/images/hero/2xl-1536px.png";
 
 export default function (props) {
 	return (
@@ -18,7 +17,7 @@ export default function (props) {
 				<mark>#</mark>
 				AshishK has settled.
 			</h2>
-
+			<p>Maker of Tetrapack.</p>
 			<p>
 				Hello everyone! I'm Ashish Khare, an indie web developer and
 				computer engineer from India. I love exploring new technologies
