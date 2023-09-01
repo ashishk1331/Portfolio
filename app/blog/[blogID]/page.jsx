@@ -1,4 +1,5 @@
 import { Client } from "@notionhq/client";
+import Head from "next/head";
 
 // Component files
 import Header from "./Header";
@@ -18,6 +19,10 @@ export default async function Page(props) {
 
 	return (
 		<>
+			<Head>
+				<title>{pageData.title}</title>
+				<meta property="og:image" content="http://localhost:3000/api/og?author=Akshat%20Mishra&title=Productivity%20is%20the%20new%20world%20porn.&date=28%20Aug%202023" />
+			</Head>
 			<Header slug={slugify(pageData.title, { lower: true })} />
 			<GoBack href="/blog" />
 			<BlogMeta pageData={pageData} />

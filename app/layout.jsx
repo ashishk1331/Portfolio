@@ -9,10 +9,19 @@ const font = Poppins({
     weight: ["300", "400", "500", "700"],
 });
 
-export const metadata = {
-    title: "Ashish Khare",
-    description: "This webpage belongs to Ashish Khare.",
-};
+export async function generateMetadata({ params }) {
+    let baseURL = process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : `http://localhost:${process.env.PORT || 3000}`;
+
+    return {
+        title: "Ashish Khare",
+        metadataBase: baseURL,
+        openGraph: {
+            images: ["/api/og"],
+        },
+    };
+}
 
 export default function RootLayout({ children }) {
     return (
@@ -32,13 +41,13 @@ export default function RootLayout({ children }) {
                 />
                 <meta
                     property="og:image"
-                    content="https://res.cloudinary.com/delxpwsul/image/upload/v1679996217/og_white_lrvpzc.png"
+                    content="http://localhost:3000/api/og?author=Akshat%20Mishra&title=Productivity%20is%20the%20new%20world%20porn.&date=28%20Aug%202023"
                 />
             </Head>
             <body
                 className={twMerge(
                     "prose prose-invert mx-auto marker:text-primary p-4 px-8",
-                    font.className
+                    font.className,
                 )}
             >
                 {children}
