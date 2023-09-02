@@ -10,7 +10,7 @@ const colors = {
 export async function GET(req) {
 	const { searchParams } = new URL(req.url);
 	let author = searchParams.get("author") || "AshishK";
-	let title = searchParams.get("title") || "Blog Post";
+	let title = searchParams.get("title") || "AshishK has settled.";
 	let date = searchParams.get("date") || new Date().toDateString();
 
 	return new ImageResponse(

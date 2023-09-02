@@ -1,7 +1,7 @@
 import AppList from "./AppList";
 import { main, under, map } from "./data.js";
 import Image from "next/image";
-import painImage from "@/public/banner.jpeg";
+import painImage from "@/public/banner.jpg";
 
 export default function (props) {
 	return (
