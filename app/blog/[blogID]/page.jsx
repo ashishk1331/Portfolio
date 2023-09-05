@@ -21,7 +21,10 @@ export default async function Page(props) {
 		<>
 			<Head>
 				<title>{pageData.title}</title>
-				<meta property="og:image" content="http://localhost:3000/api/og?author=Akshat%20Mishra&title=Productivity%20is%20the%20new%20world%20porn.&date=28%20Aug%202023" />
+				<meta
+					property="og:image"
+					content="http://localhost:3000/api/og?author=Akshat%20Mishra&title=Productivity%20is%20the%20new%20world%20porn.&date=28%20Aug%202023"
+				/>
 			</Head>
 			<Header slug={slugify(pageData.title, { lower: true })} />
 			<GoBack href="/blog" />
@@ -29,27 +32,14 @@ export default async function Page(props) {
 			<Parser blocks={blocks} getBlocks={getBlocks}>
 				{() => ({
 					blocks: {
-						image: (caption, url, key) => (
-							<figure key={key}>
-								<Image
-									width={1040}
-									height={1040}
-									src={url}
-									alt="image found"
-									className="object-contain rounded-md"
-								/>
-								<figcaption className="text-center">
-									{caption}
-								</figcaption>
-							</figure>
-						),
+						image: (caption, url, key) => null,
 						to_do: (text, checked) => (
-							<span className="h-flex gap-2">
+							<span className="h-flex gap-2 -mt-6">
 								<input
 									checked={checked}
 									readOnly
 									type="checkbox"
-									className="form-checkbox rounded text-primary bg-zinc-800"
+									className="form-checkbox rounded text-purple-600 bg-zinc-800"
 								/>
 								<p>{text}</p>
 							</span>
