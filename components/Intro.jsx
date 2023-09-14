@@ -2,6 +2,19 @@ import AppList from "./AppList";
 import { main, under, map } from "./data.js";
 import Image from "next/image";
 import painImage from "@/public/banner.jpg";
+import Icon from "@/components/icon_set";
+
+function ReadMore() {
+	return (
+		<a
+			href="/my-journey"
+			className="w-fit flex items-center gap-3 px-5 bg-zinc-900 border-2 border-zinc-800 rounded-md no-underline"
+		>
+			<p className="text-white font-normal">Read more about me.</p>
+			<Icon name="ArrowUp" />
+		</a>
+	);
+}
 
 export default function (props) {
 	return (
@@ -34,6 +47,8 @@ export default function (props) {
 				Contrary to the previous iteration of my portfolio, I added a
 				dark theme to it. Blessings for your eyes!
 			</p>
+			
+			<ReadMore />
 
 			<hr />
 
