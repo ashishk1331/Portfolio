@@ -102,7 +102,6 @@ export default function (props) {
 			<p>Here is the list of all the YouTube videos I've watched.</p>
 			<AppList data={map} />
 
-			<hr />
 		</>
 	);
 }

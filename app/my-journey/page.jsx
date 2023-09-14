@@ -66,8 +66,6 @@ export default function (props) {
 
 			<i>I'll write more later. ;)</i>
 
-			<hr />
-
 			<Footer />
 		</>
 	);

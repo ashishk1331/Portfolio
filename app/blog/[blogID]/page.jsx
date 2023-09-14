@@ -4,7 +4,6 @@ import Head from "next/head";
 // Component files
 import Header from "./Header";
 import Footer from "@/components/Footer";
-import GoBack from "@/components/GoBack";
 import { Parser } from "tetrapack";
 import slugify from "slugify";
 import Image from "next/image";
@@ -27,7 +26,6 @@ export default async function Page(props) {
 				/>
 			</Head>
 			<Header slug={slugify(pageData.title, { lower: true })} />
-			<GoBack href="/blog" />
 			<BlogMeta pageData={pageData} />
 			<Parser blocks={blocks} getBlocks={getBlocks}>
 				{() => ({
