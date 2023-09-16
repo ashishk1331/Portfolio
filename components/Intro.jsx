@@ -16,6 +16,18 @@ function ReadMore() {
 	);
 }
 
+function Resume() {
+	return (
+		<a
+			href="/resume"
+			className="w-fit flex items-center gap-3 px-5 bg-zinc-900 border-2 border-zinc-800 rounded-md no-underline"
+		>
+			<p className="text-white font-normal">My resume.</p>
+			<Icon name="ArrowUp" />
+		</a>
+	);
+}
+
 export default function (props) {
 	return (
 		<>
@@ -47,8 +59,11 @@ export default function (props) {
 				Contrary to the previous iteration of my portfolio, I added a
 				dark theme to it. Blessings for your eyes!
 			</p>
-			
-			<ReadMore />
+
+			<div className="flex flex-wrap gap-4 items-center space-between">
+				<ReadMore />
+				<Resume />
+			</div>
 
 			<hr />
 
@@ -101,7 +116,6 @@ export default function (props) {
 
 			<p>Here is the list of all the YouTube videos I've watched.</p>
 			<AppList data={map} />
-
 		</>
 	);
 }
