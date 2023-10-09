@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body
                 className={twMerge(
-                    "prose prose-invert mx-auto marker:text-primary p-4 px-8",
+                    "container max-w-7xl prose prose-invert mx-auto marker:text-primary p-4 px-8",
                     font.className,
                 )}
             >

@@ -18,7 +18,7 @@ export const main = [
 			"A fast and semantic Notion API data renderer for react projects.",
 	},
 	{
-		name: "urban player",
+		name: "urban",
 		image: urban,
 		url: "https://urban-seven.vercel.app/",
 		github: "https://github.com/ashishk1331/urban",
