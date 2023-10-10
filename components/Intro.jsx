@@ -1,8 +1,8 @@
 import AppList from "./AppList";
 import { main, under, map } from "./data.js";
 import Image from "next/image";
-import painImage from "/public/last.jpg";
-import sasukeImage from "/public/sasuke.jpg";
+import painImage from "/public/naruto.png";
+import sasukeImage from "/public/kakashi.png";
 import lastImage from "/public/three.png";
 import Icon from "@/components/icon_set";
 
@@ -45,11 +45,12 @@ export default function (props) {
 						<mark>#</mark>
 						AshishK has settled.
 					</h2>
+					<p>Maker of Tetrapack.</p>
 					<p>
 						Hello everyone! I'm Ashish Khare, an indie web developer
-						and computer engineer from India. Also, the maker of
-						Tetrapack. I love exploring new technologies while
-						creating whatever I feel is missing from the puzzle.
+						and computer engineer from India. I love exploring new
+						technologies while creating whatever I feel is missing
+						from the puzzle.
 					</p>
 					<p>
 						I usually tweet about what I'm currently hacking. I
@@ -60,7 +61,11 @@ export default function (props) {
 					</p>
 					<p>
 						Contrary to the previous iteration of my portfolio, I
-						added a dark theme to it. Blessings for your eyes!
+						added a dark theme to it. Blessings for your eyes! Also,
+						all images are drawn by{" "}
+						<a href="https://www.behance.net/humanmgn">
+							Felipe Magaña
+						</a>
 					</p>
 
 					<div className="flex flex-wrap gap-4 items-center space-between">
