@@ -1,9 +1,9 @@
 import AppList from "./AppList";
 import { main, under, map } from "./data.js";
 import Image from "next/image";
-import painImage from "/public/naruto.png";
-import sasukeImage from "/public/kakashi.png";
-import lastImage from "/public/three.png";
+import heroImage from "/public/hero_image.jpeg";
+import secondImage from "/public/second_image.jpeg";
+import lastImage from "/public/last_image.jpeg";
 import Icon from "@/components/icon_set";
 
 function ReadMore() {
@@ -35,7 +35,7 @@ export default function (props) {
 		<>
 			<div className="grid md:grid-cols-12 grid-cols-1 gap-8 justify-around items-center md:my-24 my-12">
 				<Image
-					src={painImage}
+					src={heroImage}
 					alt="Banner Image"
 					className="rounded-md col-span-6 object-cover h-full"
 				/>
@@ -61,11 +61,7 @@ export default function (props) {
 					</p>
 					<p>
 						Contrary to the previous iteration of my portfolio, I
-						added a dark theme to it. Blessings for your eyes! Also,
-						all images are drawn by{" "}
-						<a href="https://www.behance.net/humanmgn">
-							Felipe Magaña
-						</a>
+						added a dark theme to it. Blessings for your eyes!
 					</p>
 
 					<div className="flex flex-wrap gap-4 items-center space-between">
@@ -110,7 +106,7 @@ export default function (props) {
 				</div>
 
 				<Image
-					src={sasukeImage}
+					src={secondImage}
 					alt="Banner Image"
 					className="rounded-md col-span-5 shadow-xl shadow-zinc-950 md:block hidden object-cover h-full"
 				/>
