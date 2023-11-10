@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Icon from "./icon_set";
+import PeerList from "/public/peerlist.svg";
 
 export default function (props) {
 	return (
@@ -18,6 +19,13 @@ export default function (props) {
 				</a>
 				<a href="https://www.linkedin.com/in/ashishk1331/">
 					<Icon name="LinkedIn" />
+				</a>
+				<a href="https://peerlist.io/ashishk1331">
+					<img
+						src={PeerList.src}
+						alt="peerlist logo"
+						className="w-8 h-8"
+					/>
 				</a>
 			</header>
 
