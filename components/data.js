@@ -7,6 +7,10 @@ import urban from "@/images/logos/urban_logo.svg";
 import watched from "@/images/logos/watched_logo.svg";
 import hotScore from "@/images/logos/hot_score_logo.svg";
 import black from "../images/logos/black_list_logo.svg";
+import bleach from "../images/logos/bleach_logo.svg";
+import babber from "../images/logos/babber_450_logo.svg";
+import daysOfCode from "../images/logos/100_days_of_code_logo.svg";
+import shakespeare from "../images/logos/shakespeare_logo.svg";
 
 export const main = [
 	{
@@ -21,7 +25,7 @@ export const main = [
 		name: "urban",
 		image: urban,
 		url: "https://urban-seven.vercel.app/",
-		github: "https://github.com/ashishk1331/urban",
+		github: "",
 		description:
 			"Listen to your favorites Youtube videos, instead of watching them.",
 	},
@@ -53,6 +57,38 @@ export const main = [
 		github: "https://github.com/ashishk1331/watched",
 		description:
 			"Create personal list of all the movies you've watched so far.",
+	},
+	{
+		name: "Bleach API",
+		image: bleach,
+		url: "https://bleach-api-8v2r.onrender.com/",
+		github: "https://github.com/ashishk1331/bleach-api",
+		description:
+			"This api is the live adaption of the Bleach Database.",
+	},
+	{
+		name: "Babber 450",
+		image: babber,
+		url: "https://babber-450.vercel.app/",
+		github: "https://github.com/ashishk1331/babber-450",
+		description:
+			"Keep records of all questions that you've done so far in Babber 450 sheet.",
+	},
+	{
+		name: "100 Days of code",
+		image: daysOfCode,
+		url: "https://100-days-of-code-ten.vercel.app/",
+		github: "https://github.com/ashishk1331/100-days-of-code",
+		description:
+			"An Image generator tool for 100 Days of Code.",
+	},
+	{
+		name: "Shakespeare Ipsum",
+		image: shakespeare,
+		url: "https://shakespeare-ipsum.vercel.app/",
+		github: "https://github.com/ashishk1331/shakespeare-ipsum",
+		description:
+			"Generate lorem ipsum as if Shakespeare told you.",
 	},
 ];
 

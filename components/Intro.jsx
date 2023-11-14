@@ -30,6 +30,18 @@ function Resume() {
 	);
 }
 
+function Projects() {
+	return (
+		<a
+			href="/projects"
+			className="w-fit flex items-center gap-3 p-3 bg-zinc-900 border-2 border-zinc-800 rounded-md no-underline float-right"
+		>
+			<span className="text-white font-normal">View all projects</span>
+			<Icon name="ArrowUp" />
+		</a>
+	);
+}
+
 export default function (props) {
 	return (
 		<>
@@ -45,7 +57,7 @@ export default function (props) {
 						<mark>#</mark>
 						AshishK has settled.
 					</h2>
-					<p>Maker of Tetrapack.</p>
+					<p>Maker of <a href="https://tetra-docs.vercel.app/" className="inline-block">Tetrapack</a>.</p>
 					<p>
 						Hello everyone! I'm Ashish Khare, an indie web developer
 						and computer engineer from India. I love exploring new
@@ -103,6 +115,7 @@ export default function (props) {
 					</p>
 					<p>Things I've build</p>
 					<AppList data={main.slice(0, 4)} />
+					<Projects />
 				</div>
 
 				<Image

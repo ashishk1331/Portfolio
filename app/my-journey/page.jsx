@@ -38,7 +38,7 @@ export default function (props) {
 				science.
 			</p>
 
-			<Image src={stickerPanel} alt="All the stickers pasted together." />
+			<Image src={stickerPanel} alt="All the stickers pasted together." className="mx-auto" />
 
 			<h2>What I'm doing now?</h2>
 			<p>
