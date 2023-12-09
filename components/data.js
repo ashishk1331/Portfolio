@@ -11,6 +11,36 @@ import bleach from "../images/logos/bleach_logo.svg";
 import babber from "../images/logos/babber_450_logo.svg";
 import daysOfCode from "../images/logos/100_days_of_code_logo.svg";
 import shakespeare from "../images/logos/shakespeare_logo.svg";
+import folder from "../images/logos/folder_routing_logo.svg";
+import advent from "../images/logos/advent_of_code_logo.svg";
+import leetcode from "../images/logos/leetcode_logo.svg";
+
+export const coding = [
+	{
+		name: "Leetcode",
+		image: leetcode,
+		url: "https://leetcode.com/flangdev3000/",
+		github: "",
+		description:
+			"Solved 250+ problems related to data structures.",
+	},
+	{
+		name: "Advent of Code 2023",
+		image: advent,
+		url: "",
+		github: "https://github.com/ashishk1331/advent-of-code-2023",
+		description:
+			"Small programming puzzles by Eric Wastl. y2023",
+	},
+	{
+		name: "Advent of Code 2015",
+		image: advent,
+		url: "",
+		github: "https://github.com/ashishk1331/advent-of-code-2015",
+		description:
+			"Small programming puzzles by Eric Wastl. y2015",
+	},
+];
 
 export const main = [
 	{
@@ -20,6 +50,13 @@ export const main = [
 		github: "https://github.com/ashishk1331/tetrapack",
 		description:
 			"A fast and semantic Notion API data renderer for react projects.",
+	},
+	{
+		name: "folder-routing",
+		image: folder,
+		url: "",
+		github: "https://github.com/ashishk1331/folder-routing",
+		description: "A folder based router for making APIs.",
 	},
 	{
 		name: "urban",
@@ -63,8 +100,7 @@ export const main = [
 		image: bleach,
 		url: "https://bleach-api-8v2r.onrender.com/",
 		github: "https://github.com/ashishk1331/bleach-api",
-		description:
-			"This api is the live adaption of the Bleach Database.",
+		description: "This api is the live adaption of the Bleach Database.",
 	},
 	{
 		name: "Babber 450",
@@ -79,16 +115,14 @@ export const main = [
 		image: daysOfCode,
 		url: "https://100-days-of-code-ten.vercel.app/",
 		github: "https://github.com/ashishk1331/100-days-of-code",
-		description:
-			"An Image generator tool for 100 Days of Code.",
+		description: "An Image generator tool for 100 Days of Code.",
 	},
 	{
 		name: "Shakespeare Ipsum",
 		image: shakespeare,
 		url: "https://shakespeare-ipsum.vercel.app/",
 		github: "https://github.com/ashishk1331/shakespeare-ipsum",
-		description:
-			"Generate lorem ipsum as if Shakespeare told you.",
+		description: "Generate lorem ipsum as if Shakespeare told you.",
 	},
 ];
 

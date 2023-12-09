@@ -1,5 +1,5 @@
 import AppList from "./AppList";
-import { main, under, map } from "./data.js";
+import { main, under, map, coding } from "./data.js";
 import Image from "next/image";
 import heroImage from "/public/hero_image.jpeg";
 import secondImage from "/public/second_image.jpeg";
@@ -57,7 +57,16 @@ export default function (props) {
 						<mark>#</mark>
 						AshishK has settled.
 					</h2>
-					<p>Maker of <a href="https://tetra-docs.vercel.app/" className="inline-block">Tetrapack</a>.</p>
+					<p>
+						Maker of{" "}
+						<a
+							href="https://tetra-docs.vercel.app/"
+							className="inline-block"
+						>
+							Tetrapack
+						</a>
+						.
+					</p>
 					<p>
 						Hello everyone! I'm Ashish Khare, an indie web developer
 						and computer engineer from India. I love exploring new
@@ -83,8 +92,8 @@ export default function (props) {
 				</div>
 			</div>
 
-			<div className="grid md:grid-cols-12 gap-8 justify-around items-center md:my-24 my-12">
-				<div className="col-span-7">
+			<div className="grid lg:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
+				<div>
 					<h2>
 						<mark>#</mark>
 						Experimental Engineer
@@ -113,26 +122,20 @@ export default function (props) {
 						Zustand, Formik, Framer, RTL, Goober and many more
 						libraries.
 					</p>
-					<p>Things I've build</p>
+				</div>
+
+				<div className="w-full flex flex-col items-left">
 					<AppList data={main.slice(0, 4)} />
 					<Projects />
 				</div>
-
-				<Image
-					src={secondImage}
-					alt="Banner Image"
-					className="rounded-md col-span-5 shadow-xl shadow-zinc-950 md:block hidden object-cover h-full"
-				/>
 			</div>
 
-			<div className="grid md:grid-cols-12 gap-8 justify-around items-center md:my-24 my-12">
-				<Image
-					src={lastImage}
-					alt="Banner Image"
-					className="rounded-md col-span-4 shadow-xl shadow-zinc-950 md:block hidden object-cover h-full"
-				/>
+			<div className="grid md:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
+				<div className="w-full flex flex-col items-left order-last md:order-first">
+					<AppList data={map} />
+				</div>
 
-				<div className="col-span-8">
+				<div>
 					<h2>
 						<mark>#</mark>I adore VDOM.
 					</h2>
@@ -144,11 +147,40 @@ export default function (props) {
 						adopted use case of Trees, the data structure. I'm
 						impressed.
 					</p>
+				</div>
+			</div>
+
+			<div className="grid lg:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
+				<div>
+					<h2>
+						<mark>#</mark>I live on trees
+					</h2>
 
 					<p>
-						Here is the list of all the YouTube videos I've watched.
+						Indeed, leaving weed aside, I live on trees. Whether
+						AVLs or RBs, I love them all. Generally, I solve
+						questions on leetcode and have interest for problems
+						hosted in events like advent of code.
 					</p>
-					<AppList data={map} />
+
+					<p>
+						Although, I learnt Rust but it seems a bit intimidating
+						so for most of the times I start sketching with Python.
+						I've spent around 2 years writing Python so it is my
+						second language after Hindi. However, I've pledged to
+						write as much as possible Rust. Best way to do something
+						is to start doing it, isn't it?
+					</p>
+
+					<p>
+						Advent of code is my favourite competition for coding
+						problems, and this year it got even more tough. I
+						recommend coders to try it out!
+					</p>
+				</div>
+
+				<div className="w-full flex flex-col items-left">
+					<AppList data={coding} />
 				</div>
 			</div>
 		</>

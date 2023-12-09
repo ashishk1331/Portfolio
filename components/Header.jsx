@@ -5,7 +5,7 @@ import PeerList from "/public/peerlist.svg";
 export default function (props) {
 	return (
 		<>
-			<header className="h-flex gap-4 py-4 px-2 mt-4">
+			<header className="h-flex gap-x-4 px-2 mt-4">
 				<span>Home</span>
 				<Link href="/blog" className="mr-auto">
 					<span>Blog</span>

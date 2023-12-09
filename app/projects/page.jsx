@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import { main } from "@/components/data.js";
 
 export default function (props) {
-	console.log(main);
 	return (
 		<>
 			<header className="h-flex gap-4 my-4">
