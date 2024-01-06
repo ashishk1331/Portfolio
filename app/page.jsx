@@ -5,7 +5,7 @@ import Intro from "../components/Intro";
 export default function() {
 	return (
 		<>
-			<Header />
+			<Header breadcrumbs={["Home"]}/>
 			<Intro />
 			<Footer />
 		</>

@@ -2,8 +2,6 @@ import AppList from "./AppList";
 import { main, under, map, coding } from "./data.js";
 import Image from "next/image";
 import heroImage from "/public/hero_image.jpeg";
-import secondImage from "/public/second_image.jpeg";
-import lastImage from "/public/last_image.jpeg";
 import Icon from "@/components/icon_set";
 
 function ReadMore() {

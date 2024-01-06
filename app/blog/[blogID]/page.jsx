@@ -2,8 +2,9 @@ import { Client } from "@notionhq/client";
 import Head from "next/head";
 
 // Component files
-import Header from "./Header";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GoBack from "@/components/GoBack";
 import { Parser } from "tetrapack";
 import slugify from "slugify";
 import Image from "next/image";
@@ -25,7 +26,15 @@ export default async function Page(props) {
 					content="http://localhost:3000/api/og?author=Akshat%20Mishra&title=Productivity%20is%20the%20new%20world%20porn.&date=28%20Aug%202023"
 				/>
 			</Head>
-			<Header slug={slugify(pageData.title, { lower: true })} />
+			<Header
+				breadcrumbs={[
+					"Home",
+					"Blog",
+					slugify(pageData.title, { lower: true }),
+				]}
+			>
+				<GoBack href="/blog" />
+			</Header>
 			<BlogMeta pageData={pageData} />
 			<Parser blocks={blocks} getBlocks={getBlocks}>
 				{() => ({

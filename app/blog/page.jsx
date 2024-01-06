@@ -1,8 +1,9 @@
 import { Client } from "@notionhq/client";
 
 // Components
-import Header from "./Header";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GoBack from "@/components/GoBack";
 import List from "./List";
 
 export const revalidate = 3600 * 12;
@@ -11,7 +12,9 @@ export default async function Blog(props) {
 	let blogs = await getBlogs();
 	return (
 		<>
-			<Header />
+			<Header breadcrumbs={["Home", "Blog"]}>
+				<GoBack href="/" />
+			</Header>
 
 			<h2>Blog Section</h2>
 			<span>I usually don't write. Rather, I love to leave soul-crushing comments on blogs of others.</span>

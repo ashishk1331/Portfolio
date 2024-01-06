@@ -1,24 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import stickerPanel from "@/public/sticker-panel.png";
-
 import Icon from "@/components/icon_set";
+import Header from "@/components/Header";
 import GoBack from "@/components/GoBack";
 import Footer from "@/components/Footer";
 
 export default function (props) {
 	return (
 		<>
-			<header className="h-flex gap-4 my-4">
-				<span>Home</span>
-				<span>/</span>
-				<span className="mr-auto">Resume</span>
-			</header>
-
-			<GoBack href="/" />
-
-			<hr />
+			<Header breadcrumbs={["Home", "Resume"]}>
+				<GoBack href="/" />
+			</Header>
 
 			<h1 className="mt-16">Ashish Khare</h1>
 			<p className="lead">

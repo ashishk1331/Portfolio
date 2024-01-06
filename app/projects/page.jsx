@@ -1,31 +1,17 @@
 import Icon from "@/components/icon_set";
+import Header from "@/components/Header";
 import GoBack from "@/components/GoBack";
 import Footer from "@/components/Footer";
+import PeerList from "/public/peerlist.svg";
 
 import { main } from "@/components/data.js";
 
 export default function (props) {
 	return (
 		<>
-			<header className="h-flex gap-4 my-4">
-				<span>Home</span>
-				<span>/</span>
-				<span className="mr-auto">Projects</span>
-
-				<a href="https://twitter.com/AshishK1331">
-					<Icon name="Twitter" />
-				</a>
-				<a href="https://github.com/ashishk1331">
-					<Icon name="Github" />
-				</a>
-				<a href="https://www.linkedin.com/in/ashishk1331/">
-					<Icon name="LinkedIn" />
-				</a>
-			</header>
-
-			<GoBack href="/" />
-
-			<hr />
+			<Header breadcrumbs={["Home", "Projects"]}>
+				<GoBack href="/" />
+			</Header>
 
 			<h1 className="mt-16">Projects</h1>
 			<p className="lead">

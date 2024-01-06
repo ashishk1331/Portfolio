@@ -1,4 +1,5 @@
 import feather from "@/images/logos/feather_logo.svg";
+import pinloader from "@/images/logos/pinloader_logo.svg";
 import labels from "@/images/logos/labels_logo.svg";
 import emojitar from "@/images/logos/emojitar_logo.svg";
 import tetrapack from "@/images/logos/tetrapack_logo.svg";
@@ -14,6 +15,7 @@ import shakespeare from "../images/logos/shakespeare_logo.svg";
 import folder from "../images/logos/folder_routing_logo.svg";
 import advent from "../images/logos/advent_of_code_logo.svg";
 import leetcode from "../images/logos/leetcode_logo.svg";
+import topswe from "../images/logos/topswe_logo.svg";
 
 export const coding = [
 	{
@@ -123,6 +125,20 @@ export const main = [
 		url: "https://shakespeare-ipsum.vercel.app/",
 		github: "https://github.com/ashishk1331/shakespeare-ipsum",
 		description: "Generate lorem ipsum as if Shakespeare told you.",
+	},
+	{
+		name: "top SWE 100",
+		image: topswe,
+		url: "https://topswe100.vercel.app/",
+		github: "https://github.com/ashishk1331/topswe",
+		description: "I redesigned topswe.com to fit the modernity.",
+	},
+	{
+		name: "pinloader",
+		image: pinloader,
+		url: "https://pin-loader.vercel.app/",
+		github: "https://github.com/ashishk1331/PinLoader/tree/main/next-app",
+		description: "A web-app to download pinterest pins.",
 	},
 ];
 

@@ -1,34 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import stickerPanel from "@/public/sticker-panel.png";
-
 import Icon from "@/components/icon_set";
+import Header from "@/components/Header";
 import GoBack from "@/components/GoBack";
 import Footer from "@/components/Footer";
 
 export default function (props) {
 	return (
 		<>
-			<header className="h-flex gap-4 my-4">
-				<span>Home</span>
-				<span>/</span>
-				<span className="mr-auto">My Journey</span>
-
-				<a href="https://twitter.com/AshishK1331">
-					<Icon name="Twitter" />
-				</a>
-				<a href="https://github.com/ashishk1331">
-					<Icon name="Github" />
-				</a>
-				<a href="https://www.linkedin.com/in/ashishk1331/">
-					<Icon name="LinkedIn" />
-				</a>
-			</header>
-
-			<GoBack href="/" />
-
-			<hr />
+			<Header breadcrumbs={["Home", "My Journey"]}>
+				<GoBack href="/" />
+			</Header>
 
 			<h1 className="mt-16">My journey so far!</h1>
 			<p className="lead">
@@ -37,8 +20,6 @@ export default function (props) {
 				been an electronics or embedded engineer if not for computer
 				science.
 			</p>
-
-			<Image src={stickerPanel} alt="All the stickers pasted together." className="mx-auto" />
 
 			<h2>What I'm doing now?</h2>
 			<p>
