@@ -7,7 +7,7 @@ export default function (props) {
 	const N = props.breadcrumbs.length - 1;
 	return (
 		<>
-			<header className="h-flex gap-x-4 px-2 mt-4">
+			<header className="h-flex gap-x-4 px-2 mt-4 flex-wrap">
 				{props.breadcrumbs.map((label, index) => (
 					<>
 						<span
