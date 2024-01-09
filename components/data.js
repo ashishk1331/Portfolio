@@ -19,6 +19,7 @@ import topswe from "../images/logos/topswe_logo.svg";
 import prochecklist from "../images/logos/pro_checklist_logo.svg";
 import cassidyAskedMe from "../images/logos/CassidyAskedMe_logo.svg";
 import blackoutpoetry from "../images/logos/black_out_poetry_logo.svg";
+import cses from "../images/logos/cses_logo.svg";
 
 export const coding = [
 	{
@@ -28,6 +29,14 @@ export const coding = [
 		github: "",
 		description:
 			"Solved around 300 problems related to data structures.",
+	},
+	{
+		name: "CSES",
+		image: cses,
+		url: "",
+		github: "https://github.com/ashishk1331/cses",
+		description:
+			"The CSES Problem Set is a collection of algorithmic programming problems.",
 	},
 	{
 		name: "Advent of Code 2023",
