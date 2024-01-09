@@ -4,37 +4,13 @@ import Image from "next/image";
 import heroImage from "/public/hero_image.jpeg";
 import Icon from "@/components/icon_set";
 
-function ReadMore() {
+function Button(props){
 	return (
 		<a
-			href="/my-journey"
-			className="w-fit flex items-center gap-3 p-3 bg-zinc-900 border-2 border-zinc-800 rounded-md no-underline"
-		>
-			<span className="text-white font-normal">About me.</span>
-			<Icon name="ArrowUp" />
-		</a>
-	);
-}
-
-function Resume() {
-	return (
-		<a
-			href="/resume"
-			className="w-fit flex items-center gap-3 p-3 bg-zinc-900 border-2 border-zinc-800 rounded-md no-underline"
-		>
-			<span className="text-white font-normal">My resume.</span>
-			<Icon name="ArrowUp" />
-		</a>
-	);
-}
-
-function Projects() {
-	return (
-		<a
-			href="/projects"
+			href={"/" + props.url}
 			className="w-fit flex items-center gap-3 p-3 bg-zinc-900 border-2 border-zinc-800 rounded-md no-underline float-right"
 		>
-			<span className="text-white font-normal">View all projects</span>
+			<span className="text-white font-normal">{props.title}</span>
 			<Icon name="ArrowUp" />
 		</a>
 	);
@@ -52,40 +28,45 @@ export default function (props) {
 
 				<div className="col-span-6">
 					<h2 className="mt-0">
-						<mark>#</mark>
-						AshishK has settled.
+						<mark>👋</mark>
+						Hello fellas!
 					</h2>
 					<p>
-						Maker of{" "}
-						<a
-							href="https://tetra-docs.vercel.app/"
-							className="inline-block"
-						>
-							Tetrapack
+						😉 My name is Ashish Khare and I love to live on the
+						dirty side of the web planet, aka the javascript tooling
+						world.
+					</p>
+					<p>
+						🍃 I center my life around topics like VDOM, notion data
+						typing, and of course tailwind.
+					</p>
+					<p>
+						👀 Recently, I started building libraries like
+						Avvvatars and Tetrapack. Soon I'll tell you more.
+					</p>
+					<p>
+						🐦 I mostly stay awake at{" "}
+						<a href="https://twitter.com/AshishK1331">
+							Twitter Inc.
 						</a>
-						.
 					</p>
+					<ul>
+						<p>My current tech stack includes:</p>
+						<li>Javascript, Python</li>
+						<li>Next.js/Vite.js + Framer Motion</li>
+						<li>Zustand</li>
+						<li>Tailwind CSS or goober</li>
+						<li>Supabase/Firebase</li>
+						<li>React Testing Library</li>
+						<li>ShadCN UI/ Radix UI</li>
+					</ul>
 					<p>
-						Hello everyone! I'm Ashish Khare, an indie web developer
-						and computer engineer from India. I love exploring new
-						technologies while creating whatever I feel is missing
-						from the puzzle.
+						👟 Well, I know a lot of things and learning more. So,
+						follow me to be a part of my journey.
 					</p>
-					<p>
-						I usually tweet about what I'm currently hacking. I
-						disapprove of the recent transformation of Twitter into
-						X, although the underlying social platform is still
-						alive and thriving. Hence, all works for me at the end
-						of the day.
-					</p>
-					<p>
-						Contrary to the previous iteration of my portfolio, I
-						added a dark theme to it. Blessings for your eyes!
-					</p>
-
 					<div className="flex flex-wrap gap-4 items-center space-between">
-						<ReadMore />
-						<Resume />
+						<Button url="my-journey" title="About me" />
+						<Button url="resume" title="My resume" />
 					</div>
 				</div>
 			</div>
@@ -124,7 +105,7 @@ export default function (props) {
 
 				<div className="w-full flex flex-col items-left">
 					<AppList data={main.slice(0, 4)} />
-					<Projects />
+					<Button url="projects" title="View all projects" />
 				</div>
 			</div>
 

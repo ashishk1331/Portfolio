@@ -16,6 +16,8 @@ import folder from "../images/logos/folder_routing_logo.svg";
 import advent from "../images/logos/advent_of_code_logo.svg";
 import leetcode from "../images/logos/leetcode_logo.svg";
 import topswe from "../images/logos/topswe_logo.svg";
+import prochecklist from "../images/logos/pro_checklist_logo.svg";
+import cassidyAskedMe from "../images/logos/CassidyAskedMe_logo.svg";
 
 export const coding = [
 	{
@@ -24,7 +26,7 @@ export const coding = [
 		url: "https://leetcode.com/flangdev3000/",
 		github: "",
 		description:
-			"Solved 250+ problems related to data structures.",
+			"Solved around 300 problems related to data structures.",
 	},
 	{
 		name: "Advent of Code 2023",
@@ -35,12 +37,12 @@ export const coding = [
 			"Small programming puzzles by Eric Wastl. y2023",
 	},
 	{
-		name: "Advent of Code 2015",
-		image: advent,
+		name: "Cassidy Asked Me",
+		image: cassidyAskedMe,
 		url: "",
-		github: "https://github.com/ashishk1331/advent-of-code-2015",
+		github: "https://github.com/ashishk1331/cassidyAskedMe",
 		description:
-			"Small programming puzzles by Eric Wastl. y2015",
+			"Collection of interview questions asked in the Cassidoo Newsletter.",
 	},
 ];
 
@@ -168,5 +170,13 @@ export const map = [
 		github: "https://github.com/ashishk1331/black-list",
 		description:
 			"All the conference talks I've gone through in order to learn the inner workings of JS frameworks like ReactJS.",
+	},
+	{
+		name: "Pro Checklist",
+		image: prochecklist,
+		url: "https://pro-checklist.vercel.app/",
+		github: "https://github.com/ashishk1331/ProjectCheckList/tree/main/next-app",
+		description:
+			"Mindful bite-size exercises for react champs.",
 	},
 ];
