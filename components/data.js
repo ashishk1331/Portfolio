@@ -18,6 +18,7 @@ import leetcode from "../images/logos/leetcode_logo.svg";
 import topswe from "../images/logos/topswe_logo.svg";
 import prochecklist from "../images/logos/pro_checklist_logo.svg";
 import cassidyAskedMe from "../images/logos/CassidyAskedMe_logo.svg";
+import blackoutpoetry from "../images/logos/black_out_poetry_logo.svg";
 
 export const coding = [
 	{
@@ -141,6 +142,13 @@ export const main = [
 		url: "https://pin-loader.vercel.app/",
 		github: "https://github.com/ashishk1331/PinLoader/tree/main/next-app",
 		description: "A web-app to download pinterest pins.",
+	},
+	{
+		name: "black out poetry",
+		image: blackoutpoetry,
+		url: "https://black-out-poetry.vercel.app/",
+		github: "https://github.com/ashishk1331/black-out-poetry",
+		description: "Create poem by reducing the text via diigital marker.",
 	},
 ];
 
