@@ -64,10 +64,6 @@ export default function (props) {
 						👟 Well, I know a lot of things and learning more. So,
 						follow me to be a part of my journey.
 					</p>
-					<div className="flex flex-wrap gap-4 items-center space-between">
-						<Button url="my-journey" title="About me" />
-						<Button url="resume" title="My resume" />
-					</div>
 				</div>
 			</div>
 
