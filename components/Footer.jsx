@@ -15,7 +15,7 @@ export default function (props) {
 					>
 						ashishk1331
 					</a>
-					for the sixth time.
+					for the 6th time.
 				</div>
 			</footer>
 		</>

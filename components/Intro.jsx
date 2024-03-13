@@ -2,9 +2,11 @@ import AppList from "./AppList";
 import { main, under, map, coding } from "./data.js";
 import Image from "next/image";
 import heroImage from "/public/hero_image.jpeg";
+import tetrapack from "@/images/logos/tetrapack_logo.svg";
+import folder from "../images/logos/folder_routing_logo.svg";
 import Icon from "@/components/icon_set";
 
-function Button(props){
+function Button(props) {
 	return (
 		<a
 			href={"/" + props.url}
@@ -16,6 +18,23 @@ function Button(props){
 	);
 }
 
+function Mark(props) {
+	const { title, url, logo } = props;
+	return (
+		<a
+			href={url}
+			className="p-1 px-1.5 bg-zinc-800 border border-zinc-600 rounded no-underline text-sm m-0"
+		>
+			<img
+				src={logo}
+				alt="tetrapack logo"
+				className="inline-block w-5 aspect-sqaure mr-1 rounded-full"
+			/>
+			<span>{title}</span>
+		</a>
+	);
+}
+
 export default function (props) {
 	return (
 		<>
@@ -23,13 +42,13 @@ export default function (props) {
 				<Image
 					src={heroImage}
 					alt="Banner Image"
-					className="rounded-md col-span-6 object-cover h-full"
+					className="rounded-md col-span-6 object-cover w-full aspect-[3/5]"
 				/>
 
 				<div className="col-span-6">
 					<h2 className="mt-0">
 						<mark>👋</mark>
-						Hello fellas!
+						Hello, World!
 					</h2>
 					<p>
 						😉 My name is Ashish Khare and I love to live on the
@@ -37,12 +56,27 @@ export default function (props) {
 						world.
 					</p>
 					<p>
-						🍃 I center my life around topics like VDOM, notion data
-						typing, and of course tailwind.
+						🎨 I'm a frontend developer and I love to build
+						components, libraries and tools for the web.
 					</p>
 					<p>
-						👀 Recently, I started building libraries like
-						Avvvatars and Tetrapack. Soon I'll tell you more.
+						🔥 I'm currently working on{" "}
+						<Mark
+							url="https://tetra-docs.vercel.app/"
+							title="Tetrapack"
+							logo={tetrapack.src}
+						/>{" "}
+						and{" "}
+						<Mark
+							url="https://folder-routing-website.vercel.app/"
+							title="folder-routing"
+							logo={folder.src}
+						/>
+						.
+					</p>
+					<p>
+						🍃 I center my life around topics like VDOM, notion data
+						typing, and of course tailwind.
 					</p>
 					<p>
 						🐦 I mostly stay awake at{" "}
@@ -53,12 +87,13 @@ export default function (props) {
 					<ul>
 						<p>My current tech stack includes:</p>
 						<li>Javascript, Python</li>
-						<li>Next.js/Vite.js + Framer Motion</li>
+						<li>bs4, flask</li>
+						<li>Next.js, Vite.js + Framer Motion</li>
 						<li>Zustand</li>
-						<li>Tailwind CSS or goober</li>
-						<li>Supabase/Firebase</li>
+						<li>Tailwind CSS, goober, SCSS</li>
+						<li>Supabase, Firebase</li>
 						<li>React Testing Library</li>
-						<li>ShadCN UI/ Radix UI</li>
+						<li>ShadCN UI, Radix UI</li>
 					</ul>
 					<p>
 						👟 Well, I know a lot of things and learning more. So,
