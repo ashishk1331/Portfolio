@@ -1,5 +1,5 @@
 import AppList from "./AppList";
-import { main, under, map, coding } from "./data.js";
+import { main, under, map, coding, design, webpages } from "./data.js";
 import Image from "next/image";
 import heroImage from "/public/hero_image.jpeg";
 import tetrapack from "@/images/logos/tetrapack_logo.svg";
@@ -191,6 +191,58 @@ export default function (props) {
 
 				<div className="w-full flex flex-col items-left">
 					<AppList data={coding} />
+				</div>
+			</div>
+
+			<div className="grid md:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
+				<div className="w-full flex flex-col items-left order-last md:order-first">
+					<AppList data={design} />
+				</div>
+
+				<div>
+					<h2>
+						<mark>#</mark>D for Design
+					</h2>
+
+					<p>
+						"People ignore design that ignores people." - Frank
+						Chimero <br />
+						Design is the first thing that a user sees and it is the
+						first impression of your product. I've been learning
+						design for a while now and I'm trying to improve my
+						design skills. I've been using Figma for designing and
+						I'm trying to learn more about it.
+					</p>
+					<p>
+						If you want help with your design or want to discuss it,
+						I'm always open for a chat.
+					</p>
+				</div>
+			</div>
+
+			<div className="grid lg:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
+				<div>
+					<h2>
+						<mark>#</mark>Webpages are fun
+					</h2>
+
+					<p>
+						These are some of the webpages that I've built. I've
+						used Next.js, Tailwind CSS and Supabase for building
+						these webpages. I've also used Goober for styling and
+						Zustand for state management. I've also used React
+						Testing Library for testing the components.
+					</p>
+
+					<p>
+						These also includes the redesign of few webapges that I
+						came across. The whole purpose is to improve site
+						engagement and user experience.
+					</p>
+				</div>
+
+				<div className="w-full flex flex-col items-left">
+					<AppList data={webpages} />
 				</div>
 			</div>
 		</>

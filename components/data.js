@@ -20,6 +20,11 @@ import prochecklist from "../images/logos/pro_checklist_logo.svg";
 import cassidyAskedMe from "../images/logos/CassidyAskedMe_logo.svg";
 import blackoutpoetry from "../images/logos/black_out_poetry_logo.svg";
 import cses from "../images/logos/cses_logo.svg";
+import spotladder from "../images/logos/spot_ladder_logo.svg";
+import vault from "../images/logos/vault_logo.svg";
+import webpage from "../images/logos/webpage_logo.svg";
+import tetrapaper from "../images/logos/tetra_paper_logo.svg";
+import gonorth from "../images/logos/go_north_logo.svg";
 
 export const coding = [
 	{
@@ -195,5 +200,67 @@ export const map = [
 		github: "https://github.com/ashishk1331/ProjectCheckList/tree/main/next-app",
 		description:
 			"Mindful bite-size exercises for react champs.",
+	},
+];
+
+export const design = [
+	{
+		name: "Commit",
+		image: commit,
+		url: "https://www.figma.com/file/alG7S21oTVDPkgxx0FJccE/Commit?type=design&node-id=0%3A1&mode=design&t=jOm8sTwF5VlGivs3-1",
+		github: "https://commit-neon.vercel.app/",
+		description:
+			"build habits that last, not streaks that fade",
+	},
+	{
+		name: "Spot Ladder",
+		image: spotladder,
+		url: "https://www.figma.com/file/i915UaWZNnJjH8UvMRC4Qn/Spot-Ladder?type=design&node-id=0%3A1&mode=design&t=oncQBJYGkL86whMx-1",
+		github: "https://github.com/ashishk1331/Spot-Ladder",
+		description:
+			"A leaderboard of Spotify blend for people.",
+	},
+	{
+		name: "The Vault",
+		image: vault,
+		url: "https://www.figma.com/file/kiqnivz7NC2AJHpfjJfhY8/The-Vault?type=design&node-id=0%3A1&mode=design&t=7kFy4QGGNMzMwPl6-1",
+		github: "https://github.com/ashishk1331/The-Vault",
+		description:
+			"A good place to store all your important links.",
+	},
+];
+
+export const webpages = [
+	{
+		name: "Top SWE 100",
+		image: topswe,
+		url: "https://topswe100.vercel.app/",
+		github: "https://github.com/ashishk1331/topswe100",
+		description:
+			"Solve these 100 carefully curated problems in order. See you at the top!",
+	},
+	{
+		name: "DEV Resolutions Card",
+		image: webpage,
+		url: "https://dev-resolutions2024.vercel.app/",
+		github: "https://github.com/ashishk1331/DEVResolutions2024",
+		description:
+			"Get yourself a card of your #DEVResolutions2024",
+	},
+	{
+		name: "Tetra Paper",
+		image: tetrapaper,
+		url: "https://tetra-paper.vercel.app/",
+		github: "https://github.com/ashishk1331/Tetra-Paper",
+		description:
+			"This is a starter template which relies on Tetra-Pack to render pages from notion.",
+	},
+	{
+		name: "Go North",
+		image: gonorth,
+		url: "https://go-north.vercel.app/",
+		github: "https://github.com/ashishk1331/Go-North",
+		description:
+			"A duo of creatives who excel in sparking life into wireframes and crafting great user experiences.",
 	},
 ];
