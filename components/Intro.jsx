@@ -1,7 +1,7 @@
 import AppList from "./AppList";
 import { main, under, map, coding, design, webpages } from "./data.js";
 import Image from "next/image";
-import heroImage from "/public/hero_image.jpeg";
+import heroImage from "/public/hero_image.png";
 import tetrapack from "@/images/logos/tetrapack_logo.svg";
 import folder from "../images/logos/folder_routing_logo.svg";
 import Icon from "@/components/icon_set";
@@ -22,14 +22,16 @@ function Mark(props) {
 	const { title, url, logo } = props;
 	return (
 		<a
-			href={url}
+			href={url || "#"}
 			className="p-1 px-1.5 bg-zinc-800 border border-zinc-600 rounded no-underline text-sm m-0"
 		>
-			<img
-				src={logo}
-				alt="tetrapack logo"
-				className="inline-block w-5 aspect-sqaure mr-1 rounded-full"
-			/>
+			{logo && (
+				<img
+					src={logo}
+					alt="tetrapack logo"
+					className="inline-block w-5 aspect-sqaure mr-1 rounded-full"
+				/>
+			)}
 			<span>{title}</span>
 		</a>
 	);
@@ -42,21 +44,18 @@ export default function (props) {
 				<Image
 					src={heroImage}
 					alt="Banner Image"
-					className="rounded-md col-span-6 object-cover w-full aspect-[3/5]"
+					className="rounded-md col-span-6 object-cover h-full"
 				/>
 
 				<div className="col-span-6">
 					<h2 className="mt-0">
 						<mark>👋</mark>
-						Hello, World!
+						Ola Amigos!
 					</h2>
 					<p>
 						😉 My name is Ashish Khare and I love to live on the
 						dirty side of the web planet, aka the javascript tooling
-						world.
-					</p>
-					<p>
-						🎨 I'm a frontend developer and I love to build
+						world. I'm a frontend developer and I love to build
 						components, libraries and tools for the web.
 					</p>
 					<p>
@@ -77,12 +76,6 @@ export default function (props) {
 					<p>
 						🍃 I center my life around topics like VDOM, notion data
 						typing, and of course tailwind.
-					</p>
-					<p>
-						🐦 I mostly stay awake at{" "}
-						<a href="https://twitter.com/AshishK1331">
-							Twitter Inc.
-						</a>
 					</p>
 					<ul>
 						<p>My current tech stack includes:</p>

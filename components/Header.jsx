@@ -27,16 +27,16 @@ export default function (props) {
 					</Link>
 				)}
 
-				<a href="https://twitter.com/AshishK1331">
+				<a key="Twitter" href="https://twitter.com/AshishK1331">
 					<Icon name="Twitter" />
 				</a>
-				<a href="https://github.com/ashishk1331">
+				<a key="Github" href="https://github.com/ashishk1331">
 					<Icon name="Github" />
 				</a>
-				<a href="https://www.linkedin.com/in/ashishk1331/">
+				<a key="LinkedIn" href="https://www.linkedin.com/in/ashishk1331/">
 					<Icon name="LinkedIn" />
 				</a>
-				<a href="https://peerlist.io/ashishk1331">
+				<a key="Peerlist" href="https://peerlist.io/ashishk1331">
 					<img
 						src={PeerList.src}
 						alt="peerlist logo"
