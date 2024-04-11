@@ -1,4 +1,5 @@
 import AppList from "./AppList";
+import Banner from "./Banner";
 import { main, under, map, coding, design, webpages } from "./data.js";
 import Image from "next/image";
 import heroImage from "/public/hero_image.png";
@@ -40,6 +41,7 @@ function Mark(props) {
 export default function (props) {
 	return (
 		<>
+			<Banner />
 			<div className="grid md:grid-cols-12 grid-cols-1 gap-8 justify-around items-center md:my-24 my-12">
 				<Image
 					src={heroImage}
@@ -95,7 +97,7 @@ export default function (props) {
 				</div>
 			</div>
 
-			<div className="grid lg:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
+			<div className="grid md:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
 				<div>
 					<h2>
 						<mark>#</mark>
@@ -153,7 +155,7 @@ export default function (props) {
 				</div>
 			</div>
 
-			<div className="grid lg:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
+			<div className="grid md:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
 				<div>
 					<h2>
 						<mark>#</mark>I live on trees
@@ -213,7 +215,7 @@ export default function (props) {
 				</div>
 			</div>
 
-			<div className="grid lg:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
+			<div className="grid md:grid-cols-2 gap-8 justify-around items-center md:my-24 my-12">
 				<div>
 					<h2>
 						<mark>#</mark>Webpages are fun

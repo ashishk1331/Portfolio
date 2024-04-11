@@ -33,7 +33,7 @@ export const coding = [
 		url: "https://leetcode.com/flangdev3000/",
 		github: "",
 		description:
-			"Solved around 300 problems related to data structures.",
+			"Solved around 450 problems related to data structures.",
 	},
 	{
 		name: "CSES",
