@@ -21,7 +21,7 @@ const introduce = [
 const blogs = [
 	"i also write sometimes",
 	<>
-		you can my <a href="/blog">latest blogs here</a>
+		you can catch my <a href="/blog">latest blogs here</a>
 	</>,
 ];
 
@@ -39,7 +39,7 @@ const social = [
 	</span>,
 ];
 
-export default async function Home() {
+export default function Home() {
 	return (
 		<FlexBox
 			direction="column"
