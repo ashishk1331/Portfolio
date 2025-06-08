@@ -1,26 +1,17 @@
 "use client";
 
-import Image from "next/image";
-import FlexBox from "./FlexBox";
 import Chat from "./Chat";
+import Avatar from "./Avatar";
 
 export default function BlogTitle() {
 	return (
 		<>
-			<FlexBox>
-				<Image
-					src="/hero_image.png"
-					width={128}
-					height={128}
-					alt="Selfie for ashish."
-					className="w-8 h-8 aspect-square rounded-full object-cover"
-				/>
-				<p className="text-neutral-500">Ashish</p>
-			</FlexBox>
+			<Avatar />
 			<Chat index={1}>welcome to my blog section</Chat>
 			<Chat index={2}>
 				i usually dont write. but sometimes stuff is worth sharing!
 			</Chat>
+			<Chat index={3}>like</Chat>
 		</>
 	);
 }

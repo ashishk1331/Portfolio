@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body
                 className={twMerge(
-                    "container max-w-xl mt-48 fancy-anchors mx-auto marker:text-primary p-4 px-8",
+                    "container max-w-xl mt-48 fancy-anchors mx-auto marker:text-primary p-4",
                     font.className,
                 )}
             >

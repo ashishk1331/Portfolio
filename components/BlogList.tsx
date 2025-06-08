@@ -15,7 +15,7 @@ export default function BlogList({ blogsMeta }: BlogListProps) {
 			{blogsMeta.map((post, index) => (
 				<li key={index} className="flex flex-col items-start gap-2">
 					<Chat
-						index={index + 2}
+						index={index + 3}
 						extraDate={format(post.pubDate, "yyyy MM")}
 					>
 						<a href={"/blog/" + post.slug}>{post.title}</a>
