@@ -2,22 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-	@apply bg-secondary;
+.h-flex {
+	@apply flex items-center;
 }
 
-.h-flex{
-	@apply flex items-center
+.v-flex {
+	@apply flex flex-col items-center;
 }
 
-.v-flex{
-	@apply flex flex-col items-center
-}
-
-svg{
-	@apply w-6 h-6
+svg {
+	@apply w-6 h-6;
 }
 
 mark {
-	@apply bg-transparent text-primary mr-2
+	@apply bg-transparent text-primary mr-2;
+}
+
+.fancy-anchors a {
+	@apply underline decoration-primary underline-offset-1;
+}
+
+.dot {
+	@apply aspect-square w-2 h-2 rounded-full bg-primary;
 }
