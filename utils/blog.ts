@@ -10,6 +10,7 @@ export type BlogMeta = {
   description: string;
   author: string;
   hasAudio: boolean;
+  draft: boolean;
 };
 
 const BLOGS_DIR = path.join(process.cwd(), "blogs");

@@ -1,11 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { Fragment } from "react";
 import Footer from "../components/Footer";
-import Chat from "../components/Chat";
-import Spacer from "../components/Spacer";
 import FlexBox from "../components/FlexBox";
+import Hero from "../components/Hero";
 
 const introduce = [
 	"hi",
@@ -20,7 +18,12 @@ const introduce = [
 	"systems! systems! systems!",
 ];
 
-const blogs = ["i also write sometimes", "you can my latest blogs like"];
+const blogs = [
+	"i also write sometimes",
+	<>
+		you can my <a href="/blog">latest blogs here</a>
+	</>,
+];
 
 const social = [
 	"im available to talk at",
@@ -36,7 +39,7 @@ const social = [
 	</span>,
 ];
 
-export default function Home() {
+export default async function Home() {
 	return (
 		<FlexBox
 			direction="column"
@@ -52,20 +55,7 @@ export default function Home() {
 				/>
 				<p className="text-neutral-500">Ashish</p>
 			</FlexBox>
-			{[introduce, blogs, social].map((contents, index) => (
-				<Fragment key={index}>
-					{contents.map((text, index, array) => (
-						<Chat
-							key={index}
-							index={index}
-							extra={index === array.length - 1}
-						>
-							{text}
-						</Chat>
-					))}
-					<Spacer />
-				</Fragment>
-			))}
+			<Hero contents={[introduce, blogs, social]} />
 			<Footer />
 		</FlexBox>
 	);

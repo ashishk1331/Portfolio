@@ -10,14 +10,14 @@ const LINKS = {
 			title: "Blog",
 			href: "/blog",
 		},
-		{
-			title: "Work",
-			href: "/work",
-		},
-		{
-			title: "Projects",
-			href: "/projects",
-		},
+		// {
+		// 	title: "Work",
+		// 	href: "/work",
+		// },
+		// {
+		// 	title: "Projects",
+		// 	href: "/projects",
+		// },
 	],
 	contact: [
 		{
