@@ -3,6 +3,8 @@ import Chat from "./Chat";
 import Spacer from "./Spacer";
 import { ListItem } from "@/app/page";
 import APK from "./APK";
+import ImageChat from "./ImageChat";
+import TimeCheck from "./TimeCheck";
 
 type HeroProps = {
 	contents: ListItem[][];
@@ -11,9 +13,13 @@ type HeroProps = {
 export default function Hero({ contents }: HeroProps) {
 	return contents.map((sub, index) => (
 		<Fragment key={index}>
-			{sub.map(({ content, itemType, href }, index, array) =>
+			{sub.map(({ content, itemType, href, src, alt }, index, array) =>
 				itemType === "apk" ? (
-					<APK link={href}>{content}</APK>
+					<APK index={index} link={href}>
+						{content}
+					</APK>
+				) : itemType === "image" ? (
+					<ImageChat src={src} alt={alt} index={index} />
 				) : (
 					<Chat
 						key={index}
@@ -24,6 +30,7 @@ export default function Hero({ contents }: HeroProps) {
 					</Chat>
 				),
 			)}
+			<TimeCheck index={sub.length} />
 			<Spacer />
 		</Fragment>
 	));

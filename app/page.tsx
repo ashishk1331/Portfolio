@@ -6,9 +6,11 @@ import Hero from "../components/Hero";
 import Avatar from "@/components/Avatar";
 
 export type ListItem = {
-	itemType: "text" | "node" | "apk";
-	content: React.ReactNode;
+	itemType: "text" | "node" | "apk" | "image";
+	content?: React.ReactNode;
 	href?: string;
+	src?: string;
+	alt?: string;
 };
 
 const introduce: ListItem[] = [
@@ -36,9 +38,25 @@ const introduce: ListItem[] = [
 		),
 	},
 	{ itemType: "text", content: "systems! systems! systems!" },
+	{ itemType: "text", content: "also wanted to point out that" },
+	{
+		itemType: "image",
+		src: "/ai_quote.webp",
+		alt: "Quote by Joana",
+	},
 ];
 
 const blogs: ListItem[] = [
+	{
+		itemType: "text",
+		content:
+			"ive worked with python 🐍, nextjs, figma and a ton of frontend",
+	},
+	{
+		itemType: "text",
+		content:
+			"these days i spent my evenings learning about machine learning competitions and why my model doesn't generalize well",
+	},
 	{ itemType: "text", content: "i can also build apps for mobile" },
 	{ itemType: "text", content: "here is a no bs todo app for you" },
 	{
@@ -51,7 +69,7 @@ const blogs: ListItem[] = [
 		itemType: "node",
 		content: (
 			<>
-				you can catch my <a href="/blog">latest blogs here</a>
+				you can read my <a href="/blog">latest blogs here</a>
 			</>
 		),
 	},
